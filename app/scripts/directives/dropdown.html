@@ -1,0 +1,18 @@
+<div class="dropdown-container" ng-class="{ 'show': listVisible }">
+    <div class="dropdown-display" ng-click="show()" ng-class="{ 'clicked' : listVisible }">
+        <div ng-if="!isPlaceholder" class="margin-left5 black" >{{display}}</div>
+        <div class="placeholder margin-left5 grey07"  ng-if="isPlaceholder">{{placeholder}}</div>
+        <!--i class="fa fa-angle-down"></i -->
+    </div>
+    <div class="dropdown-list" ng-if="listVisible">
+        <div>
+            <div ng-repeat="item in list" class="item-dropdown" ng-click="select(item)" ng-class="{ selected: isSelected(item) }">
+
+                <div class="item_img {{item['img']}}"></div>
+
+                <span>{{property !== undefined ? item[property] : item}}</span>
+
+            </div>
+        </div>
+    </div>
+</div>

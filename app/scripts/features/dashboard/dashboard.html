@@ -1,0 +1,311 @@
+<ion-view class="dashboard">
+
+<ion-header-bar position top="44" ios-top="64" class="sub-header bar-stable background-custom-2">
+    <span class="title left"><i class="ion ion-ios-keypad icon-form"> </i> {{ctrlDashboard.title}}</span>
+</ion-header-bar>
+
+<div position top="100" ios-top="120" class="sub-header-header row">
+    <div class="col-65">
+        <div class="list list-inset searchbox">
+            <label class="item item-input border-none">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search Documents" ng-model="ctrlDashboard.query">
+            </label>
+        </div>
+        <div class="btn-group control"  ng-click="ctrlDashboard.formTypes($event)">
+            <button type="button" class="btn btn-primary">
+                New Work Authority <span class="caret"></span>
+            </button>
+
+        </div>
+    </div>
+    <div class="col-35 right-border-bottom">
+        <span class="title right header-title">Boards</span>
+    </div>
+</div>
+
+<div class="scroll-content-contents" position top="155" ios-top="155">
+    <ion-content scroll="false" class="background-custom-2">
+
+    <div class="col col-65 contents padding-top30">
+
+        <div class="row data-contents margin-right_5" resize-contents sync="true">
+
+            <div class="col col-100">
+                <ul class="content">
+                    <div class="draft">
+                        <div class="divider text-bold">Draft({{ctrlDashboard.drafts}})</div>
+                        <li class="padding-top3">
+                            <ul class="content-box background-border-left">
+                                <li  ng-repeat="draft in ctrlDashboard.forms | filter: ctrlDashboard.query" ng-if="(draft.json.status === 'Draft')"
+                                    ng-click="navigateForm(draft)" ng-class="{'item-selected' : draft.selected}">
+
+                                    <div class="row  margin-left5">
+                                        <div class="col">
+                                            <div class="header">
+                                                <div class="row">
+                                                    <div class="col col-35">
+                                                        Reference No:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{draft.json.reference_no}}
+                                                    </div>
+                                                 </div>
+                                                 <div class="row">
+                                                     <div class="col col-20">
+                                                         Created:
+                                                     </div>
+                                                     <div class="col">
+                                                         {{draft.json.created_date | date: 'dd/MM/yyyy'}}
+                                                     </div>
+                                                     <div class="col col-20">
+                                                         Modified:
+                                                     </div>
+                                                     <div class="col">
+                                                         {{draft.json.modified_date | date: 'dd/MM/yyyy'}}
+                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  margin-left5">
+                                        <div class="col border-separator margin-top_20">
+                                            <div class="details">
+                                                <div class="row">
+                                                    <div class="col col-25">
+                                                        Form Type:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{ctrlDashboard.formtypes[draft.json.form_type]}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="draft.json.form_type === 'form_type_1' && draft.json.forms.Form1.rpo_location_pwa">
+                                                    <div class="col col-25">
+                                                        RPO Location:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{draft.json.forms.Form1.rpo_location}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="draft.json.form_type === 'form_type_2'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{draft.json.forms.Form4.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="draft.json.form_type === 'form_type_3'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{draft.json.forms.Form3.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li ng-if="(ctrlDashboard.drafts === 0)">
+                                    <div class="_error">
+                                        No drafts.
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+
+                <ul class="content">
+                    <div class="favourites">
+                        <div class="divider text-bold">Favourites({{ctrlDashboard.favourites}})</div>
+                        <li class="padding-top3">
+                            <ul class="content-box background-border-left">
+                                <li  ng-repeat="favourite in ctrlDashboard.forms | filter: ctrlDashboard.query" ng-if="(favourite.json.status === 'Favourites')"
+                                    ng-click="navigateForm(favourite)" ng-class="{'item-selected' : favourite.selected}">
+                                    <div class="row  margin-left5">
+                                        <div class="col">
+                                            <div class="header">
+                                                <div class="row">
+                                                    <div class="col col-35">
+                                                        Reference No:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.reference_no}}
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col col-20">
+                                                        Created:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.created_date | date: 'dd/MM/yyyy'}}
+                                                    </div>
+                                                    <div class="col col-20">
+                                                        Modified:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.modified_date | date: 'dd/MM/yyyy'}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-left5">
+                                        <div class="col border-separator margin-top_20">
+                                            <div class="details">
+                                                <div class="row">
+                                                    <div class="col col-25">
+                                                        Form Type:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{ctrlDashboard.formtypes[favourite.json.form_type]}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="favourite.json.form_type === 'form_type_1' && favourite.json.forms.Form1.rpo_location_pwa">
+                                                    <div class="col col-25">
+                                                        RPO Location:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.forms.Form1.rpo_location}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="favourite.json.form_type === 'form_type_2'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.forms.Form4.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="favourite.json.form_type === 'form_type_3'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{favourite.json.forms.Form3.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li ng-if="(ctrlDashboard.Favourites === 0)">
+                                    <div class="_error">
+                                        No Favourites.
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+
+                <ul class="content">
+                    <div class="completed">
+                        <div class="divider text-bold">Completed({{ctrlDashboard.completed}})</div>
+                        <li class="padding-top3">
+                            <ul class="content-box background-border-left">
+                                <li  ng-repeat="completed in ctrlDashboard.forms | filter: ctrlDashboard.query" ng-if="(completed.json.status === 'Completed')"
+                                    ng-click="navigateForm(completed)" ng-class="{'item-selected' : completed.selected}">
+                                    <div class="row margin-left5">
+                                        <div class="col">
+                                            <div class="header">
+                                                <div class="row">
+                                                    <div class="col col-35">
+                                                        Reference No:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.reference_no}}
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col col-20">
+                                                        Created:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.created_date | date: 'dd/MM/yyyy'}}
+                                                    </div>
+                                                    <div class="col col-20">
+                                                        Modified:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.modified_date | date: 'dd/MM/yyyy'}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-left5">
+                                        <div class="col border-separator margin-top_20">
+                                            <div class="details">
+                                                <div class="row">
+                                                    <div class="col col-25">
+                                                        Form Type:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{ctrlDashboard.formtypes[completed.json.form_type]}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="completed.json.form_type === 'form_type_1' && completed.json.forms.Form1.rpo_location_pwa">
+                                                    <div class="col col-25">
+                                                        RPO Location:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.forms.Form1.rpo_location}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="completed.json.form_type === 'form_type_2'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.forms.Form4.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                                <div class="row" ng-if="completed.json.form_type === 'form_type_3'">
+                                                    <div class="col col-25">
+                                                        Person In Charge:
+                                                    </div>
+                                                    <div class="col">
+                                                        {{completed.json.forms.Form3.person_in_charge_name}}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li ng-if="(ctrlDashboard.completed === 0)">
+                                    <div class="_error">
+                                        No Completed.
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+        <!--
+        <div class="row footer border-left-none border-bottom-none">
+            <div class="col col-100">
+                <span class="info">
+                    Footer
+                </span>
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div class="col col-35 contents content-right padding-top30"   ng-include src="'scripts/features/forms/prefilled/pre-filled-forms.html'">
+    </div>
+
+</ion-content>
+
+</div>
+
+
+</ion-view>
+
+

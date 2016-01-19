@@ -1,0 +1,76 @@
+<ion-popover-view class="more-options background-custom-4">
+
+
+    <ion-content  scroll="false" ng-controller="CtrlMoreOptions">
+        <div class="accordion-contents">
+            <accordion close-others=true>
+
+                <accordion-group  ng-init="isopen = accordion.isopen" is-open="isopen" ng-repeat="accordion in ctrlMoreOptions.groups">
+                    <accordion-heading >
+                        <span ng-if="accordion.accordion === 'themes'">Themes</span>
+                        <span ng-if="accordion.accordion === 'graph'">Graph</span>
+                        <span ng-if="accordion.accordion === 'info'">Information</span>
+                        <span ng-if="accordion.accordion === 'app'">App</span>
+                        <i class="pull-right icon"
+                           ng-class="{'ion-arrow-down-b': isopen, 'ion-arrow-up-b': !isopen}"></i>
+                    </accordion-heading>
+
+
+                    <div class="list popover-content" ng-if="accordion.accordion === 'themes'">
+                        <label class="item item-radio" ng-repeat="theme in ctrlMoreOptions.themes">
+                            <input type="radio" name="group" ng-checked="(ctrlApp.theme.css === theme.css)" ng-click="ctrlApp.setTheme(theme)" >
+                            <div class="item-content">
+                                {{theme.name}}
+                            </div>
+                            <i class="radio-icon ion-checkmark"></i>
+                        </label>
+                    </div>
+
+                    <div class="list popover-content" ng-if="accordion.accordion === 'graph'">
+                        <a class="item popover-item action-cursor" ng-click="ctrlApp.showGraph('Form')">
+                            <i class="ion ion-ios-grid-view-outline"></i> Form
+                        </a>
+                        <a class="item popover-item action-cursor" ng-click="ctrlApp.showGraph('Forms')">
+                            <i class="ion ion-ios-grid-view"></i> Forms
+                        </a>
+                        <a class="item popover-item action-cursor" ng-click="ctrlApp.showGraph('Summary')">
+                            <i class="ion ion-pie-graph"></i> Summary
+                        </a>
+                    </div>
+
+                    <div class="popover-content black" ng-if="accordion.accordion === 'info'">
+                        <ion-scroll>
+                            <div class="content">
+                                Collection of nine paper forms, used by field users to request access to areas of KiwiRail’s network.
+                                If work is required to be carried out on or beside the track, a field user is required to fill out one or more of these forms.
+                                Which form that must be filled in is governed by the <b>Bulletin Application Process</b>.
+                            </div>
+                        </ion-scroll>
+
+                    </div>
+
+                    <div class="list popover-content black" ng-if="accordion.accordion === 'app'">
+                        <a class="item item-icon-left" href="#">
+                            <i class="icon ion-social-instagram"></i>
+                            Name
+                            <span class="item-note">
+                                {{ctrlMoreOptions.app_name}}
+                            </span>
+                        </a>
+                        <a class="item item-icon-left" href="#">
+                            <i class="icon ion-ios-information"></i>
+                            Version
+                            <span class="item-note">
+                                {{ctrlMoreOptions.version}}
+                            </span>
+                        </a>
+
+                    </div>
+
+                </accordion-group>
+
+            </accordion>
+        </div>
+    </ion-content>
+</ion-popover-view>
+

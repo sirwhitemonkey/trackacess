@@ -1,0 +1,41 @@
+.stats{
+
+  ion-content {
+    margin-top: 55px !important;
+    padding-top: 50px;
+  }
+
+  .controls {
+    float:right;
+    margin-right: 5px;
+    margin-top: 5px !important;
+
+    button {
+      border: 0;
+      z-index: 1;
+    }
+  }
+
+  .sub-header {
+    display: inline-block;
+
+    .title {
+      left:0 !important;
+    }
+  }
+
+  .graph {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+}
+
+
+
+
+
+
+

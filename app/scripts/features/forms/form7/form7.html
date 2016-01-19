@@ -1,0 +1,533 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+    <div class="content-form">
+
+    <div class="row background-content">
+        <div class="col col-35 margin-top10">
+            <span class="header-title">Power off and on Hours:</span><br/>
+            (Note: this may be different to the worksite hours - use 24hr clock)
+        </div>
+        <div class="col col-65">
+            <div class="row">
+                <div class="col col-25 text-bold margin-top10">
+                    Power OFF From
+                </div>
+                <div class="col col-30 margin-top3">
+                    <div custom-time time="ctrlForm7.form.power_off_from_hr" key="power_off_from_hr" form="Form7"></div>
+                </div>
+                <div class="col col-20 text-bold margin-top10">
+                    Power ON At
+                </div>
+                <div class="col col-30 margin-top3">
+                    <div custom-time time="ctrlForm7.form.power_on_at_hr" key="power_on_at_hr" form="Form7"></div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row background-content">
+        <div class="col col-35 margin-top10">
+            Isolation Locations
+        </div>
+        <div class="col col-65">
+            <div class="row">
+                <div class="col col-15 margin-top10 text-bold">
+                    Between
+                </div>
+                <div class="col margin-top3">
+                    <input type="text" placeholder="Between" ng-model="ctrlForm7.form.isolation_locations_between" class="background-transparent"
+                           post-filled-form src-key="isolation_locations_between" src-value="ctrlForm7.form.isolation_locations_between" src-form="Form7">
+                    <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.isolation_locations_between"></div>
+
+                </div>
+                <div class="col col-15 margin-top10 text-bold">
+                    At
+                </div>
+                <div class="col margin-top3">
+                    <input type="text" placeholder="And" ng-model="ctrlForm7.form.isolation_locations_and" class="background-transparent"
+                           post-filled-form src-key="isolation_locations_and" src-value="ctrlForm7.form.isolation_locations_and" src-form="Form7">
+                    <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.isolation_locations_and"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row background-content">
+        <div class="col col-35 ">
+            <div class="row">
+                <div class="col">
+                    <span class="header-title"> Description of Work</span><br/> Can be different in Form 1. (Functionality to copy)
+
+                </div>
+            </div>
+        </div>
+        <div class="col col-65 margin-top10">
+            <textarea  placeholder="Description of Work"  class="background-transparent" ng-model="ctrlForm7.form.description_work" rows="10"
+                       post-filled-form src-key="description_work" src-value="ctrlForm7.form.description_work" src-form="Form7">
+            </textarea>
+            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.description_work"></div>
+        </div>
+    </div>
+
+    <div class="row background-content">
+        <div class="col col-35">
+            <div class="row">
+                <div class="col">
+                    <span class="header-title">Restriction and Protection of Electric Train movements.</span><br/>
+                    (This section must be completed with at least 1 option ticked. Contact Network Access for guidance 43216)
+                </div>
+            </div>
+        </div>
+        <div class="col col-65">
+            <div class="row">
+                <div class="col col-5 margin-top10">
+                    <a ng-click="ctrlForm7.form.blocking_applied_signals=!ctrlForm7.form.blocking_applied_signals;
+                        ctrlForm7.form.esl=false;
+                        ctrlForm7.form.isolation_protected_worksite=false;"
+                       post-filled-form src-key="blocking_applied_signals" src-value="ctrlForm7.form.blocking_applied_signals" src-form="Form7" >
+                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.blocking_applied_signals,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.blocking_applied_signals}"></i></a>
+
+                </div>
+                <div class="col  margin-top15">
+                    Blocking can be applied to Signals
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-5 margin-top10">
+                    <a ng-click="ctrlForm7.form.esl=!ctrlForm7.form.esl;
+                        ctrlForm7.form.blocking_applied_signals=false;
+                        ctrlForm7.form.isolation_protected_worksite=false;"
+                       post-filled-form src-key="esl" src-value="ctrlForm7.form.esl" src-form="Form7" >
+                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.esl,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.esl}"></i></a>
+
+                </div>
+                <div class="col  margin-top15">
+                    Electric Services Limit Board's (ESL) are required/will be erected at
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-5 margin-top10">
+                    <a ng-click="ctrlForm7.form.isolation_protected_worksite=!ctrlForm7.form.isolation_protected_worksite;
+                        ctrlForm7.form.blocking_applied_signals=false;
+                        ctrlForm7.form.esl=false;"
+                       post-filled-form src-key="isolation_protected_worksite" src-value="ctrlForm7.form.isolation_protected_worksite" src-form="Form7" >
+                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.isolation_protected_worksite,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.isolation_protected_worksite}"></i></a>
+
+                </div>
+                <div class="col  margin-top15">
+                    The isolation is wholly inside a protected worksite(Form 1)
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" ng-if="ctrlForm7.form.blocking_applied_signals">
+                    <div class="row">
+                        <div class="col text-bold">
+                            List Signals
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <textarea rows="10" placeholder="List Signals" ng-model="ctrlForm7.form.blocking_applied_signals_lists" class="background-transparent"
+                                      post-filled-form src-key="blocking_applied_signals_lists" src-value="ctrlForm7.form.blocking_applied_signals_lists" src-form="Form7" >
+                            </textarea>
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.blocking_applied_signals_lists"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col" ng-if="ctrlForm7.form.esl">
+                    <div class="row">
+                        <div class="col col-15 margin-top5 text-bold">
+                            From
+                        </div>
+                        <div class="col">
+                            <input type="number" min="0" class="background-transparent" placeholder="Metrage(km)" ng-model="ctrlForm7.form.esl_from_metrage"
+                                   post-filled-form src-key="esl_from_metrage" src-value="ctrlForm7.form.esl_from_metrage" src-form="Form7" >
+
+                        </div>
+                        <div class="col">
+                            <input type="text" class="background-transparent" placeholder="Station(between)" ng-model="ctrlForm7.form.esl_from_station_between"
+                                   post-filled-form src-key="esl_from_station_between" src-value="ctrlForm7.form.esl_from_station_between" src-form="Form7" >
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.esl_from_station_between"></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="background-transparent" placeholder="Station(and)" ng-model="ctrlForm7.form.esl_from_station_and"
+                                   post-filled-form src-key="esl_from_station_and" src-value="ctrlForm7.form.esl_from_station_and" src-form="Form7" >
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.esl_from_station_and"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-15 margin-top5 text-bold">
+                            To
+                        </div>
+                        <div class="col">
+                            <input type="number" min="0" class="background-transparent" placeholder="Metrage(km)" ng-model="ctrlForm7.form.esl_to_metrage"
+                                   post-filled-form src-key="esl_to_metrage" src-value="ctrlForm7.form.esl_to_metrage" src-form="Form7" >
+
+
+                        </div>
+                        <div class="col">
+                            <input type="text" class="background-transparent" placeholder="Station(between)" ng-model="ctrlForm7.form.esl_to_station_between"
+                                   post-filled-form src-key="esl_to_station_between" src-value="ctrlForm7.form.esl_to_station_between" src-form="Form7" >
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.esl_to_station_between"></div>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="background-transparent" placeholder="Station(and)" ng-model="ctrlForm7.form.esl_to_station_and"
+                                   post-filled-form src-key="esl_to_station_and" src-value="ctrlForm7.form.esl_to_station_and" src-form="Form7" >
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.esl_to_station_and"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row background-content">
+            <div class="col col-35 margin-top10 header-title">
+               Which Lines will the power be cut off (AC NIMT)?
+            </div>
+            <div class="col col-65 margin-top10">
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.line_ef25=!ctrlForm7.form.line_ef25;"
+                           post-filled-form src-key="line_ef25" src-value="ctrlForm7.form.line_ef25" src-form="Form7" single="false">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.line_ef25,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.line_ef25}"></i></a>
+
+                    </div>
+                    <div class="col col-20 margin-top15">
+                        EF25
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.line_diesel_hauled_trains=!ctrlForm7.form.line_diesel_hauled_trains;"
+                           post-filled-form src-key="line_diesel_hauled_trains" src-value="ctrlForm7.form.line_diesel_hauled_trains" src-form="Form7" single="false">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.line_diesel_hauled_trains,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.line_diesel_hauled_trains}"></i></a>
+
+                    </div>
+                    <div class="col col-20 margin-top15">
+                       Diesel hauled trains
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.line_15days_notice=!ctrlForm7.form.line_15days_notice;"
+                           post-filled-form src-key="line_15days_notice" src-value="ctrlForm7.form.line_15days_notice" src-form="Form7" single="false">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.line_15days_notice,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.line_15days_notice}"></i></a>
+
+                    </div>
+                    <div class="col col-20 margin-top15">
+                        15 Days notice
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.line_yard=!ctrlForm7.form.line_yard;"
+                           post-filled-form src-key="line_yard" src-value="ctrlForm7.form.line_yard" src-form="Form7" single="false">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.line_yard,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.line_yard}"></i></a>
+
+                    </div>
+                    <div class="col col-20 margin-top15">
+                        Yard
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.single_line_area=!ctrlForm7.form.single_line_area;
+                        ctrlForm7.form.both_up_down_main=false;
+                        ctrlForm7.form.up_main=false;
+                        ctrlForm7.form.down_main=false;
+                        ctrlForm7.form.other_lines=false;"
+                           post-filled-form src-key="single_line_area" src-value="ctrlForm7.form.single_line_area" src-form="Form7" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.single_line_area,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.single_line_area}"></i></a>
+
+                    </div>
+                    <div class="col  margin-top15">
+                        Single Line Area only - no adjacent lines
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.both_up_down_main=!ctrlForm7.form.both_up_down_main;
+                        ctrlForm7.form.single_line_area=false;
+                        ctrlForm7.form.up_main=false;
+                        ctrlForm7.form.down_main=false;
+                        ctrlForm7.form.other_lines=false;"
+                           post-filled-form src-key="both_up_down_main" src-value="ctrlForm7.form.both_up_down_main" src-form="Form7" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.both_up_down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.both_up_down_main}"></i></a>
+
+                    </div>
+                    <div class="col  margin-top15">
+                        Both Up and Down main
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.up_main=!ctrlForm7.form.up_main;
+                        ctrlForm7.form.single_line_area=false;
+                        ctrlForm7.form.both_up_down_main=false;
+                        ctrlForm7.form.down_main=false;
+                        ctrlForm7.form.other_lines=false;"
+                           post-filled-form src-key="up_main" src-value="ctrlForm7.form.up_main" src-form="Form7" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.up_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.up_main}"></i></a>
+
+                    </div>
+                    <div class="col  margin-top15">
+                        Up Main only
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.down_main=!ctrlForm7.form.down_main;
+                        ctrlForm7.form.single_line_area=false;
+                        ctrlForm7.form.both_up_down_main=false;
+                        ctrlForm7.form.up_main=false;
+                        ctrlForm7.form.other_lines=false;"
+                           post-filled-form src-key="down_main" src-value="ctrlForm7.form.down_main" src-form="Form7" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.down_main}"></i></a>
+
+                    </div>
+                    <div class="col  margin-top15">
+                        Down Main only
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm7.form.other_lines=!ctrlForm7.form.other_lines;
+                        ctrlForm7.form.single_line_area=false;
+                        ctrlForm7.form.both_up_down_main=false;
+                        ctrlForm7.form.up_main=false;
+                        ctrlForm7.form.down_main=false;"
+                           post-filled-form src-key="other_lines" src-value="ctrlForm7.form.other_lines" src-form="Form7" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.other_lines,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.other_lines}"></i></a>
+
+                    </div>
+                    <div class="col  margin-top15">
+                        Other Lines(Specify)
+                    </div>
+                    <div class="col margin-top10" ng-if="ctrlForm7.form.other_lines">
+                        <input  class="background-transparent" type="text" placeholder="Other Lines" ng-model="ctrlForm7.form.specify_other_lines"
+                                post-filled-form src-key="specify_other_lines" src-value="ctrlForm7.form.specify_other_lines" src-form="Form7" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm7.form.specify_other_lines"></div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        (If in doubt of cut off locations, clarify with Traction Control)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-15 padding-top20 text-bold">
+                        From
+                    </div>
+                    <div class="col col-95">
+                        <div class="list">
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    TSS
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.tss_from"  ng-change="ctrlForm7.setTss(ctrlForm7.form.tss_from,0)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.tss track by o.id"
+                                        post-filled-form src-key="tss_from" src-value="ctrlForm7.form.tss_from" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    TSS(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" placeholder="TSS(Metrage)"  readonly ng-model="ctrlForm7.form.tss_from.kilometrage">
+
+                            </label>
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 1
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.isolator1_from"  ng-change="ctrlForm7.setIsolator(ctrlForm7.form.isolator1_from,0,0)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.isolator track by o.id"
+                                        post-filled-form src-key="isolator1_from" src-value="ctrlForm7.form.isolator1_from" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 1(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" readonly placeholder="Isolator 1(Metrage)" ng-model="ctrlForm7.form.isolator1_from.kilometrage">
+
+                            </label>
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 2
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.isolator2_from"  ng-change="ctrlForm7.setIsolator(ctrlForm7.form.isolator2_from,0,1)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.isolator track by o.id"
+                                        post-filled-form src-key="isolator2_from" src-value="ctrlForm7.form.isolator2_from" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 2(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" readonly placeholder="Isolator 2(Metrage)" ng-model="ctrlForm7.form.isolator2_from.kilometrage">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-15 padding-top20 text-bold">
+                        To
+                    </div>
+                    <div class="col col-95">
+                        <div class="list">
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    TSS
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.tss_to"  ng-change="ctrlForm7.setTss(ctrlForm7.form.tss_to,1)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.tss track by o.id"
+                                        post-filled-form src-key="tss_to" src-value="ctrlForm7.form.tss_to" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    TSS(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" placeholder="TSS(Metrage)"  readonly ng-model="ctrlForm7.form.tss_to.kilometrage">
+
+                            </label>
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 1
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.isolator1_to"  ng-change="ctrlForm7.setIsolator(ctrlForm7.form.isolator1_to,1,0)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.isolator track by o.id"
+                                        post-filled-form src-key="isolator1_to" src-value="ctrlForm7.form.isolator1_to" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 1(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" readonly placeholder="Isolator 1(Metrage)" ng-model="ctrlForm7.form.isolator1_to.kilometrage">
+
+                            </label>
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 2
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.isolator2_to"  ng-change="ctrlForm7.setIsolator(ctrlForm7.form.isolator2_to,1,1)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.isolator track by o.id"
+                                        post-filled-form src-key="isolator2_to" src-value="ctrlForm7.form.isolator2_to" src-form="Form7" ></select>
+
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    Isolator 2(Metrage)
+                                </div>
+                                <input type="text" class="background-transparent" readonly placeholder="Isolator 2(Metrage)" ng-model="ctrlForm7.form.isolator2_to.kilometrage">
+                            </label>
+                            <label class="item item-input item-select background-transparent">
+                                <div class="input-label text-bold">
+                                    Termination
+                                </div>
+                                <select class="background-transparent" ng-model="ctrlForm7.form.termination"  ng-change="ctrlForm7.setTermination(ctrlForm7.form.termination)" ng-options="o as (o.name + ' (' + o.id + ')')  for o in ctrlForm7.termination track by o.id"
+                                        post-filled-form src-key="termination" src-value="ctrlForm7.form.termination" src-form="Form7" ></select>
+                            </label>
+                            <label class="item item-input item-input background-transparent">
+                                <div class="input-label text-bold">
+                                    Termination (Metrage)
+                                </div>
+                                <input class="background-transparent" type="text" readonly placeholder="Termination (Metrage)" ng-model="ctrlForm7.form.termination.kilometrage">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="row background-content">
+        <div class="col col-35 margin-top10 header-title">
+            KiwiRail Network Electrical Safety Observer required ?
+        </div>
+        <div class="col col-65">
+            <div class="row">
+                <div class="col col-5 margin-top10">
+                    <a ng-click="ctrlForm7.form.electrical_safety_observer_yes=!ctrlForm7.form.electrical_safety_observer_yes;ctrlForm7.form.electrical_safety_observer_no=false"
+                       post-filled-form src-key="electrical_safety_observer_yes" src-value="ctrlForm7.form.electrical_safety_observer_yes" src-form="Form7" >
+                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.electrical_safety_observer_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.electrical_safety_observer_yes}"></i></a>
+
+                </div>
+                <div class="col col-15 margin-top15">
+                    Yes
+                </div>
+                <div class="col col-5 margin-top10">
+                    <a ng-click="ctrlForm7.form.electrical_safety_observer_no=!ctrlForm7.form.electrical_safety_observer_no;ctrlForm7.form.electrical_safety_observer_yes=false;"
+                       post-filled-form src-key="electrical_safety_observer_no" src-value="ctrlForm7.form.electrical_safety_observer_no" src-form="Form7" >
+                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm7.form.electrical_safety_observer_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm7.form.electrical_safety_observer_no}"></i></a>
+
+                </div>
+                <div class="col col-15 margin-top15">
+                    No
+                </div>
+            </div>
+            <div class="row" ng-if="ctrlForm7.form.electrical_safety_observer_yes">
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            Electrical Safety Observer Hours
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col col-15 margin-top10 text-bold">
+                            From
+                        </div>
+                        <div class="col col-30 margin-top3">
+                            <div custom-time time="ctrlForm7.form.electrical_safety_observer_from_hr" key="electrical_safety_observer_from_hr" form="Form7"></div>
+                        </div>
+                        <div class="col col-15 margin-top10 text-align-right text-bold">
+                            To
+                        </div>
+                        <div class="col col-30 margin-top3">
+                            <div custom-time time="ctrlForm7.form.electrical_safety_observer_to_hr" key="electrical_safety_observer_to_hr" form="Form7"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row background-content">
+        <div class="col col-35">
+            <div class="row">
+                <div class="col header-title">
+                    Traction Person  and Contact Number
+                </div>
+            </div>
+        </div>
+        <div class="col col-65">
+            <div class="row">
+                <div class="col col-25 margin-top10">
+                    Person Name
+                </div>
+                <div class="col margin-top3">
+                    <input   class="background-transparent" type="text"  placeholder="Person Name"  ng-model="ctrlForm7.form.traction_person_name"
+                            post-filled-form src-key="traction_person_name" src-value="ctrlForm7.form.traction_person_name" src-form="Form7" >
+                    <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm7.form.traction_person_name"></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col col-25 margin-top10">
+                    Contact Number
+                </div>
+                <div class="col margin-top3">
+                    <input   class="background-transparent" type="text"  placeholder="Contact Number"  ng-model="ctrlForm7.form.traction_person_contact_no"
+                            post-filled-form src-key="traction_person_contact_no" src-value="ctrlForm7.form.traction_person_contact_no" src-form="Form7" >
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+</div>

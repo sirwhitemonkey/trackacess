@@ -1,0 +1,51 @@
+<ion-modal-view class="modal background-custom-2" ng-controller="CtrlFormsValidators">
+    <ion-header-bar class="background-custom-1">
+        <div class="button text-bold background-custom-1 _normal" ng-click="ctrlFormsValidators.close()">
+            <span><i class="ion ion-reply"></i>  Cancel</span>
+        </div>
+
+
+        <h1 class="title">Forms Validation</h1>
+
+
+        <div class="button text-bold background-custom-1 _normal" ng-if="ctrlFormsValidators.submit" ng-click="ctrlFormsValidators.submitAction()">
+            <span><i class="ion ion-forward"></i> Confirm</span>
+        </div>
+
+
+
+    </ion-header-bar>
+    <ion-content scroll="true">
+
+        <div class="forms-validator">
+            <div class="list" ng-repeat="o in ctrlFormsValidators.forms | orderBy: 'form'">
+
+                <a class="item" ng-class="{'item-icon-left': o.done}" ng-click="ctrlFormsValidators.showForm(o)">
+
+                    <ion-spinner ng-if="!o.done"></ion-spinner>
+                    <i class="icon ion-checkmark" ng-if="o.done && !o.error"></i>
+                    <i class="icon ion-close _error" ng-if="o.done && o.error"></i>
+
+                    {{o.form}}
+
+                <span ng-if="!o.done" class="item-note text-bold">
+                   Checking ...
+                </span>
+                 <span ng-if="o.done && !o.error" class="item-note text-bold _verified">
+                   Verified
+                </span>
+                <span ng-if="o.done && o.error" class="item-note _error text-bold">
+                   Show Error
+                </span>
+                </a>
+
+            </div>
+            <br/><br/>
+
+
+        </div>
+
+    </ion-content>
+</ion-modal-view>
+
+

@@ -1,0 +1,356 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+    <div class="content-form">
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                       Secondary Protection Method:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm9.form.secondary_pm_detonators_stop_board=!ctrlForm9.form.secondary_pm_detonators_stop_board;"
+                           post-filled-form src-key="secondary_pm_detonators_stop_board" src-value="ctrlForm9.form.secondary_pm_detonators_stop_board" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.secondary_pm_detonators_stop_board,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.secondary_pm_detonators_stop_board}"></i></a>
+
+                    </div>
+                    <div class="col margin-top3 ">
+                        Detonators & Stop Board
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm9.form.secondary_pm_detonators_flashing_stop_light=!ctrlForm9.form.secondary_pm_detonators_flashing_stop_light;"
+                           post-filled-form src-key="secondary_pm_detonators_flashing_stop_light" src-value="ctrlForm9.form.secondary_pm_detonators_flashing_stop_light" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.secondary_pm_detonators_flashing_stop_light,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.secondary_pm_detonators_flashing_stop_light}"></i></a>
+
+                    </div>
+                    <div class="col margin-top3">
+                        Detonators & Flashing Stop Light
+
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row" ng-if="(ctrlForm9.form.secondary_pm_detonators_stop_board || ctrlForm9.form.secondary_pm_detonators_stop_board)">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5">
+                                <a ng-click="ctrlForm9.form.placed_csp_stop_boards=!ctrlForm9.form.placed_csp_stop_boards;ctrlForm9.form.placed_each_limit_worksite=false;"
+                                   post-filled-form src-key="placed_csp_stop_boards" src-value="ctrlForm9.form.placed_csp_stop_boards" src-form="Form9" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.placed_csp_stop_boards,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.placed_csp_stop_boards}"></i></a>
+
+                            </div>
+                            <div class="col margin-top3 ">
+                                Placed at CSP stop boards
+
+                            </div>
+                            <div class="col col-5">
+                                <a ng-click="ctrlForm9.form.placed_each_limit_worksite=!ctrlForm9.form.placed_each_limit_worksite;ctrlForm9.form.placed_csp_stop_boards=false;"
+                                   post-filled-form src-key="placed_each_limit_worksite" src-value="ctrlForm9.form.placed_each_limit_worksite" src-form="Form9" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.placed_each_limit_worksite,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.placed_each_limit_worksite}"></i></a>
+
+                            </div>
+                            <div class="col">
+                                Placed at each limit of worksite
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5">
+                                <a ng-click="ctrlForm9.form.placed_following_locations=!ctrlForm9.form.placed_following_locations;"
+                                   post-filled-form src-key="placed_following_locations" src-value="ctrlForm9.form.placed_following_locations" src-form="Form9" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.placed_following_locations,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.placed_following_locations}"></i></a>
+
+                            </div>
+                            <div class="col margin-top3 ">
+                                Placed at the following locations
+                            </div>
+                            <div class="col margin-top_3" ng-if="ctrlForm9.form.placed_following_locations" >
+                                <input type="text" class="background-transparent" placeholder="List Locations" ng-model="ctrlForm9.form.placed_following_list_locations"
+                                       post-filled-form src-key="placed_following_list_locations" src-value="ctrlForm9.form.placed_following_list_locations" src-form="Form9" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.placed_following_list_locations"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm9.form.pm_lockout=!ctrlForm9.form.pm_lockout;"
+                           post-filled-form src-key="pm_lockout" src-value="ctrlForm9.form.pm_lockout" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.pm_lockout,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.pm_lockout}"></i></a>
+
+                    </div>
+                    <div class="col header-title margin-top3">
+                        Lockout
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm9.form.pm_lockout">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col text-bold">
+                                List LZ Number/s
+                            </div>
+                        </div>
+                        <div class="row">
+                            <textarea  rows="10" placeholder="List LZ Number/s"  class="background-transparent" ng-model="ctrlForm9.form.list_lz_numbers"
+                                       post-filled-form src-key="list_lz_numbers" src-value="ctrlForm9.form.list_lz_numbers" src-form="Form9" >
+                            </textarea>
+                            <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.list_lz_numbers"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 border ">
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm9.form.points_secured=!ctrlForm9.form.points_secured;
+                         ctrlForm9.pointsSecured(ctrlForm9.form.points_secured);"
+                           post-filled-form src-key="points_secured" src-value="ctrlForm9.form.points_secured" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.points_secured,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.points_secured}"></i></a>
+
+                    </div>
+                    <div class="col header-title margin-top3">
+                        Points Secured
+                    </div>
+
+                </div>
+            </div>
+            <div class="col col-65 border dotted-border-top border-bottom-none border-left-none padding-top10">
+                <div class="row" ng-if="ctrlForm9.form.points_secured">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col text-bold ">
+                                Points Location
+                            </div>
+                            <div class="col  text-bold">
+                                Points Number
+                            </div>
+                            <div class="col  text-bold">
+                                Position Secured
+                            </div>
+                            <div class="col col-5">
+                                <i class="ion ion-ios-plus icon-action align-right" ng-click="ctrlForm9.newPointsSecured()"></i>
+                            </div>
+                        </div>
+
+                        <div class="row" ng-repeat="o in ctrlForm9.form.points_secured_lists">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="text" class="background-transparent" placeholder="Points Location" ng-model="o.location"
+                                               post-filled-form src-key="points_secured_lists" src-value="ctrlForm9.form.points_secured_lists" child-key="{{$index}}_location" src-form="Form9" >
+                                        <div ng-hide="true" capitalize first-character="true" src-item="o.location"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="number" min="0"  class="background-transparent" placeholder="Points Number" ng-model="o.number"
+                                               post-filled-form src-key="points_secured_lists" src-value="ctrlForm9.form.points_secured_lists" child-key="{{$index}}_number" src-form="Form9" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col margin-top_10">
+                                        <label class="background-transparent tem item-input item-select">
+                                            <div class="input-label">
+                                              &nbsp;&nbsp;
+                                            </div>
+                                            <select class="background-transparent" ng-model="o.position_secured" ng-options="o as o.name for o in ctrlForm9.position_secured track by o.id"
+                                                    post-filled-form src-key="points_secured_lists" src-value="ctrlForm9.form.points_secured_lists" child-key="{{$index}}_position_secured"  child-value="o.position_secured" src-form="Form9" ></select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-5 margin-top10">
+                                <i class="ion ion-ios-minus icon-action align-right" ng-click="ctrlForm9.removePointsSecured($index)"></i>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                Name and role of person securing points
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col col-25 margin-top10 text-bold">
+                              Person Name
+                            </div>
+                            <div class="col margin-top3">
+                                <input   class="background-transparent" type="text"  placeholder="Person Name"  ng-model="ctrlForm9.form.points_secured_person_name"
+                                        post-filled-form src-key="points_secured_person_name" src-value="ctrlForm9.form.points_secured_person_name" src-form="Form9" >
+                                <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm9.form.points_secured_person_name"></div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col col-25 margin-top10">
+                                Person Role
+                            </div>
+                            <div class="col margin-top3">
+                                <input   class="background-transparent" type="text"  placeholder="Person Role"  ng-model="ctrlForm9.form.points_secured_person_role"
+                                        post-filled-form src-key="points_secured_person_role" src-value="ctrlForm9.form.points_secured_person_role" src-form="Form9" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.points_secured_person_role"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="margin-top10 header-title">
+                    Name and role of person/s placing/removing secondary protection:
+                </div>
+            </div>
+            <div class="col col-65 margin-top10">
+                <div class="row">
+                    <div class="col col-25 margin-top10">
+                        Person Name
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Person Name"  ng-model="ctrlForm9.form.secondary_protection_person_name"
+                                post-filled-form src-key="secondary_protection_person_name" src-value="ctrlForm9.form.secondary_protection_person_name" src-form="Form9" >
+                        <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm9.form.secondary_protection_person_name"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-25 margin-top10">
+                        Person Role
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Person Role"  ng-model="ctrlForm9.form.secondary_protection_person_role"
+                                post-filled-form src-key="secondary_protection_person_role" src-value="ctrlForm9.form.secondary_protection_person_role" src-form="Form9" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.secondary_protection_person_role"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm9.form.line_impassable=!ctrlForm9.form.line_impassable;"
+                           post-filled-form src-key="line_impassable" src-value="ctrlForm9.form.line_impassable" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.line_impassable,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.line_impassable}"></i></a>
+
+                    </div>
+                    <div class="col header-title margin-top3">
+                        If line impassable, first train(number) and scheduled time after end of work (if know) ?
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm9.form.line_impassable">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-28 text-bold">
+                                Train Number
+                            </div>
+                            <div class="col col">
+                                <input type="number" min="0" class="item-input-text background-transparent " placeholder="Train Number" ng-model="ctrlForm9.form.line_impassable_train_number"
+                                       post-filled-form src-key="line_impassable_train_number" src-value="ctrlForm9.form.line_impassable_train_number" src-form="Form9" >
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                ETA
+                            </div>
+                            <div class="col col-30 margin-top_3">
+                                <div custom-time time="ctrlForm9.form.line_impassable_eta"  key="line_impassable_eta" form="Form9"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                At
+                            </div>
+                            <div class="col">
+                                <input type="text" class="item-input-text background-transparent" placeholder="At" ng-model="ctrlForm9.form.line_impassable_at"
+                                       post-filled-form src-key="line_impassable_at" src-value="ctrlForm9.form.line_impassable_at" src-form="Form9" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.line_impassable_at"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+
+            <div class="col col-150">
+                <div class="row">
+                    <div class="col col-50 header-title">
+                        S&I Diagram must be provided with sketch of Primary and Secondary protection
+                    </div>
+                    <div class="col col-5 margin-top5">
+                        <a ng-click="ctrlForm9.form.si_diagram_attached=!ctrlForm9.form.si_diagram_attached;
+                        ctrlForm9.siDiagramAttached(ctrlForm9.form.si_diagram_attached);"
+                           post-filled-form src-key="si_diagram_attached" src-value="ctrlForm9.form.si_diagram_attached" src-form="Form9" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm9.form.si_diagram_attached,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm9.form.si_diagram_attached}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top5">
+                        Yes, attached
+                    </div>
+                    <div class="col margin-top5" ng-if="ctrlForm9.form.si_diagram_attached">
+                        <a ng-click="ctrlForm9.siDiagram()">
+                            <span class="text-bold"><u>SI Diagram</u></span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+         </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="header-title margin-top10">
+                    Any other special requirements ? Please describe
+                </div>
+            </div>
+            <div class="col col-65 margin-top10">
+                <textarea class="background-transparent" placeholder="Any other special requirements ? Please describe" ng-model="ctrlForm9.form.other_special_requirements" rows="10"
+                          post-filled-form src-key="other_special_requirements" src-value="ctrlForm9.form.other_special_requirements" src-form="Form9" >
+                </textarea>
+                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm9.form.other_special_requirements"></div>
+            </div>
+        </div>
+
+    </div>
+</div>

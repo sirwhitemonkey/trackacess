@@ -1,0 +1,65 @@
+@import "util/retina-sprites";
+$sprites: sprite-map("si-diagram1x/*.png");     // import 1x sprites
+$sprites2x: sprite-map("si-diagram2x/*.png");   // import 2x sprites
+
+@each $sprite in sprite-names($sprites) {
+  .#{$sprite} {
+    @include retina-sprite($sprite);
+  }
+}
+
+
+.si-diagram {
+
+  left:0;
+  top: 0;
+  bottom: 0;
+  right:0;
+  width: 100%;
+
+  dropdown {
+    width: 120px;
+  }
+
+
+  .canvas-container {
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .si-diagram-sketching-mode {
+     width:100%;
+  }
+
+  #si-diagram-sketch {
+   }
+
+  .canvas-sketch-obj {
+  }
+
+  .labelling {
+    padding-left:7px;
+    width: 50px;
+  }
+
+  #si-diagram-sketch:hover > canvas {
+    -moz-transform: scale(3,3);
+    -webkit-transform: scale(3,3);
+    transform: scale(3,3);
+  }
+
+  input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    z-index:1;
+    filter: alpha(opacity=0);
+  }
+}
+
+

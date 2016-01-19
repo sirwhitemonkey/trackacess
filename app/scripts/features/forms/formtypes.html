@@ -1,0 +1,20 @@
+<ion-popover-view class="form-types background-custom-4">
+
+
+    <ion-content  scroll="false" ng-controller="CtrlFormTypes">
+
+        <div class="list popover-content" >
+            <a class="item popover-item action-cursor" ng-click="ctrlFormTypes.setFormType('form_type_1')">
+                <i class="ion ion-document"></i> {{ctrlFormTypes.formtypes.form_type_1}}
+            </a>
+            <a class="item popover-item action-cursor" ng-click="ctrlFormTypes.setFormType('form_type_2')">
+                <i class="ion ion-document"></i> {{ctrlFormTypes.formtypes.form_type_2}}
+            </a>
+            <a class="item popover-item action-cursor" ng-click="ctrlFormTypes.setFormType('form_type_3')">
+                <i class="ion ion-document"></i> {{ctrlFormTypes.formtypes.form_type_3}}
+            </a>
+        </div>
+
+    </ion-content>
+</ion-popover-view>
+

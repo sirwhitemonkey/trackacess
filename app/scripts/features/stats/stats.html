@@ -1,0 +1,15 @@
+<ion-view cache-view="false" class="stats background-custom-2">
+
+    <ion-header-bar position top="44" ios-top="64" class="sub-header bar-stable background-white02">
+        <span class="title left"><i class="ion {{ctrlStats.icon}}"></i> {{ctrlStats.title}}</span>
+        <div class="controls" ng-if="ctrlStats.form">
+            <button  ng-click="navigateRoute('main.forms',{})" class="btn btn-primary"><i class="ion ion-document"></i>  {{ctrlStats.switch_form}}</button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content class="graph" scroll="false">
+        <chart data="ctrlStats.graph_data" ng-if="ctrlStats.graph_data !== undefined"></chart>
+    </ion-content>
+
+
+</ion-view>

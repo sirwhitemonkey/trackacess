@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="trackaccess" ng-controller="CtrlApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta content="telephone=no" name="format-detection">
+    <title>Track Access</title>
+
+    <link href="bower_components/angular-bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/ionic/release/css/ionic.min.css" rel="stylesheet">
+    <link href="styles/css/screen.css" rel="stylesheet">
+    <link theme-style  rel="stylesheet">
+
+
+</head>
+<body animation="slide-left-right-ios7">
+<ion-nav-view></ion-nav-view>
+
+
+
+
+<script id="template/accordion/accordion-group.html" type="text/ng-template">
+    <div class="panel panel-default">
+        <div class="panel-heading action-cursor" ng-click="isOpen = !isOpen">
+            <h4 class="panel-title">
+                <span class="accordion-toggle" accordion-transclude="heading">{{heading}}</span>
+            </h4>
+        </div>
+        <div class="panel-collapse" collapse="!isOpen">
+            <div class="panel-body" ng-transclude></div>
+        </div>
+    </div>
+</script>
+
+
+
+
+<script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="bower_components/highcharts/highcharts.js"></script>
+<script type="text/javascript" src="bower_components/highcharts/highcharts-more.js"></script>
+<script type="text/javascript" src="bower_components/highcharts/highcharts-3d.js"></script>
+<script type="text/javascript" src="bower_components/moment/moment.js"></script>
+
+<script src="lib/sketch.js"></script>
+
+<!-- encryption -->
+<script src="lib/jsbn/jsbn.js"></script>
+<script src="lib/jsbn/jsbn2.js"></script>
+<script src="lib/jsbn/prng4.js"></script>
+<script src="lib/jsbn/rng.js"></script>
+<script src="lib/jsbn/rsa.js"></script>
+<script src="lib/jsbn/rsa2.js"></script>
+<script src="lib/jsbn/base64.js"></script>
+<script src="lib/jsbn/sha1.js"></script>
+
+
+<!-- track access scripts -->
+
+<script type="text/javascript" src="scripts/app.js"></script>
+<script type="text/javascript" src="scripts/controllers/controllers.js"></script>
+<script type="text/javascript" src="scripts/directives/directives.js"></script>
+<script type="text/javascript" src="scripts/filters/filters.js"></script>
+
+<script type="text/javascript" src="scripts/services/services.js"></script>
+<script type="text/javascript" src="scripts/services/local-data-storage.js"></script>
+<script type="text/javascript" src="scripts/services/util-string.js"></script>
+<script type="text/javascript" src="scripts/services/chart.js"></script>
+<script type="text/javascript" src="scripts/services/json-data-store.js"></script>
+<script type="text/javascript" src="scripts/services/session.js"></script>
+<script type="text/javascript" src="scripts/services/api.js"></script>
+<script type="text/javascript" src="scripts/services/file-reader.js"></script>
+
+<script type="text/javascript" src="scripts/features/main/ctrl-app.js"></script>
+<script type="text/javascript" src="scripts/features/main/ctrl-more-options.js"></script>
+<script type="text/javascript" src="scripts/features/main/model-app.js"></script>
+
+<script type="text/javascript" src="scripts/features/dashboard/ctrl-dashboard.js"></script>
+<script type="text/javascript" src="scripts/features/dashboard/ctrl-dashboard-forms.js"></script>
+
+<script type="text/javascript" src="scripts/features/stats/ctrl-stats.js"></script>
+
+<script type="text/javascript" src="scripts/features/forms/prefilled/ctrl-prefilled-form.js"></script>
+<script type="text/javascript" src="scripts/features/forms/overview/ctrl-overview.js"></script>
+<script type="text/javascript" src="scripts/features/forms/ctrl-forms.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form1/ctrl-form1.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form2/ctrl-form2.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form3/ctrl-form3.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form4/ctrl-form4.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form5/ctrl-form5.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form6/ctrl-form6.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form7/ctrl-form7.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form8/ctrl-form8.js"></script>
+<script type="text/javascript" src="scripts/features/forms/form9/ctrl-form9.js"></script>
+<script type="text/javascript" src="scripts/features/forms/ctrl-form-types.js"></script>
+<script type="text/javascript" src="scripts/features/forms/model-forms.js"></script>
+<script type="text/javascript" src="scripts/features/forms/model-graphs.js"></script>
+<script type="text/javascript" src="scripts/features/forms/model-forms-validator.js"></script>
+<script type="text/javascript" src="scripts/features/forms/directive-forms.js"></script>
+<script type="text/javascript" src="scripts/features/forms/ctrl-forms-validators.js"></script>
+<script type="text/javascript" src="scripts/features/si-diagram/ctrl-si-diagram.js"></script>
+<script type="text/javascript" src="scripts/features/si-diagram/model-si-diagram.js"></script>
+<script type="text/javascript" src="scripts/features/si-diagram/directive-si-diagram.js"></script>
+
+<script type="text/javascript" src="js/initOptions.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/messages.js"></script>
+
+
+</body>
+</html>

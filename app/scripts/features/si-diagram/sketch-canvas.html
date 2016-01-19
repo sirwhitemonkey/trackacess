@@ -1,0 +1,104 @@
+<div class="si-diagram-sketching-mode">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col text-bold margin-left15">
+                    Colours
+                </div>
+            </div>
+            <div class="row" ng-if="content!==undefined && content!==''" >
+                <div class="col margin-left15">
+                    <dropdown placeholder="Colours ..."  list="data_colors" selected="tool_color"  on-selected="onToolColor(item)" property="id">
+                    </dropdown>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col text-bold">
+                    Marker
+                </div>
+            </div>
+            <div class="row" ng-if="content!==undefined && content!==''">
+                <div class="col">
+                    <dropdown placeholder="Marker ..."  list="data_sizes" selected="tool_size" on-selected="onToolSize(item)"  property="id">
+                    </dropdown>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-15">
+            <div class="row">
+                <div class="col text-bold">
+                    Eraser
+                </div>
+            </div>
+            <div class="row" ng-click = "eraser()" ng-if="content!==undefined && content!==''">
+                <div class="col">
+                    <div class="eraser_icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col text-align-center">
+            <div class="row">
+                <div class="col text-bold">
+                    Drag/Drop
+                </div>
+            </div>
+            <div class="row" ng-if="content!==undefined && content!==''">
+                <div class="col" ng-if="content!==undefined && content!=='' && !labelStarted">
+                    <button class="btn btn-primary labelling" ng-click="label()"> Label
+                    </button>
+                </div>
+                <div class="col" ng-if="content!==undefined && content!=='' && labelStarted">
+                    <button class="btn btn-primary ion-drag" ng-click="label()" ng-if="labelStarted">
+                    </button>
+                </div>
+                <div class="col" ng-if="content!==undefined && content!==''">
+                    <button class="btn btn-primary ion-android-delete" ng-click="labelRemove()" ng-if="labelStarted">
+                    </button>
+                    <i class="ion ion-android-delete margin-top10" ng-if="!labelStarted"></i>
+                </div>
+                <div class="col" ng-if="content!==undefined && content!==''">
+                    <button class="btn btn-primary ion-compose" ng-click="labelCompleted()" ng-if="labelStarted">
+                    </button>
+                    <i class="ion ion-compose margin-top10" ng-if="!labelStarted"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col  text-align-center">
+            <div class="row">
+                <div class="col text-bold">
+                    Zoom
+                </div>
+            </div>
+            <div class="row" ng-if="content!==undefined && content!==''">
+                <div class="col margin-top_10">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-primary ion-minus" ng-click="zoom('-')">
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-primary ion-plus" ng-click="zoom('+')">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col canvas-container">
+
+            <canvas id="{{canvas}}" class="canvas-sketch-obj"></canvas>
+            <canvas id="canvas_save_content" ng-hide="true"></canvas>
+
+        </div>
+    </div>
+
+</div>

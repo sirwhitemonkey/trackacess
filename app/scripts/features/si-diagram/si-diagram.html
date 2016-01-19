@@ -1,0 +1,36 @@
+<ion-modal-view class="modal si-diagram background-custom-2" ng-controller="CtrlSIDiagram">
+    <ion-header-bar class="background-custom-1">
+
+        <form>
+            <div class="button text-bold background-custom-1_normal">
+                <span><i class="ion ion-ios-photos"></i> Photo ...</span>
+
+                <input type="file" id="si_diagram_photo_selection" onchange="angular.element(this).scope().onFileChanged()" class="upload"/>
+
+            </div>
+        </form>
+
+
+
+        <h1 class="title">SI Diagram</h1>
+
+
+        <div class="button text-bold background-custom-1_normal" ng-click="ctrlSIDiagram.save()">
+            <span><i class="ion ion-close"></i> Close</span>
+        </div>
+
+
+
+    </ion-header-bar>
+    <ion-content scroll="false">
+
+      <sketch-canvas canvas="si-diagram-sketch"  content="ctrlSIDiagram.content"
+                     original-content="ctrlSIDiagram.originalContent"></sketch-canvas>
+
+
+    </ion-content>
+</ion-modal-view>
+
+
+
+

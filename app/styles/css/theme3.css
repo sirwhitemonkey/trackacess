@@ -1,0 +1,278 @@
+/* line 1, ../sass/_style3.scss */
+.background-custom-1 {
+  background-color: #E41C39 !important;
+}
+
+/* line 5, ../sass/_style3.scss */
+.background-custom-2 {
+  background-color: #eee !important;
+}
+
+/* line 9, ../sass/_style3.scss */
+.background-custom-3 {
+  background-color: #D3D2D2 !important;
+}
+
+/* line 13, ../sass/_style3.scss */
+.background-custom-4 {
+  background-color: #ffffff !important;
+}
+
+/* line 17, ../sass/_style3.scss */
+.background-custom-5 {
+  background-color: #C1ECFA !important;
+}
+
+/* line 21, ../sass/_style3.scss */
+.background-custom-6 {
+  background-color: #FFFF8C !important;
+}
+
+/* line 25, ../sass/_style3.scss */
+.background-custom-7 {
+  background-color: #CD731E !important;
+}
+
+/* line 29, ../sass/_style3.scss */
+.background-custom-8 {
+  background-color: #FDD7E4 !important;
+}
+
+/* line 33, ../sass/_style3.scss */
+.background-custom-9 {
+  background-color: #C8C8C8 !important;
+}
+
+/* line 37, ../sass/_style3.scss */
+.background-custom-10 {
+  background-color: #0599C6 !important;
+}
+
+/* line 41, ../sass/_style3.scss */
+.background-custom-11 {
+  background-color: #f9f9f9 !important;
+}
+
+/* line 47, ../sass/_style3.scss */
+.title {
+  color: #ECF0F1 !important;
+}
+
+/* line 51, ../sass/_style3.scss */
+.more-options {
+  color: #ffffff !important;
+}
+
+/* line 58, ../sass/_style3.scss */
+.dashboard .sub-header .title {
+  color: #000000 !important;
+}
+/* line 64, ../sass/_style3.scss */
+.dashboard .sub-header-header .right {
+  color: #E41C39 !important;
+}
+/* line 68, ../sass/_style3.scss */
+.dashboard .sub-header-header .right-border-bottom, .dashboard .sub-header-header .col-65 {
+  border-bottom: 2px solid #E41C39;
+}
+/* line 74, ../sass/_style3.scss */
+.dashboard .contents-custom-pane {
+  background-color: #ffffff;
+}
+/* line 83, ../sass/_style3.scss */
+.dashboard .contents .content .divider {
+  color: #ECF0F1;
+}
+/* line 87, ../sass/_style3.scss */
+.dashboard .contents .content .content-box {
+  border-bottom-color: #D3D2D2;
+}
+/* line 90, ../sass/_style3.scss */
+.dashboard .contents .content .content-box .header {
+  color: #000000;
+}
+/* line 94, ../sass/_style3.scss */
+.dashboard .contents .content .content-box .details {
+  color: #848484;
+}
+/* line 101, ../sass/_style3.scss */
+.dashboard .contents .content .draft .divider {
+  background-color: #E41C39;
+}
+/* line 105, ../sass/_style3.scss */
+.dashboard .contents .content .draft .content-box.background-border-left {
+  border-left-color: #E41C39;
+}
+/* line 112, ../sass/_style3.scss */
+.dashboard .contents .content .favourites .divider {
+  background-color: #19AD51;
+}
+/* line 116, ../sass/_style3.scss */
+.dashboard .contents .content .favourites .content-box.background-border-left {
+  border-left-color: #19AD51;
+}
+/* line 124, ../sass/_style3.scss */
+.dashboard .contents .content .completed .divider {
+  background-color: #F7A51C;
+}
+/* line 128, ../sass/_style3.scss */
+.dashboard .contents .content .completed .content-box.background-border-left {
+  border-left-color: #F7A51C;
+}
+/* line 138, ../sass/_style3.scss */
+.dashboard .contents.content-right {
+  background-color: #eee;
+}
+/* line 142, ../sass/_style3.scss */
+.dashboard .contents.content-left {
+  -webkit-box-shadow: 1px 0px 4px 0px #777;
+  -moz-box-shadow: 1px 0px 4px 0px #777;
+  box-shadow: 1px 0px 4px 0px #777;
+}
+/* line 148, ../sass/_style3.scss */
+.dashboard .btn-primary:hover,
+.dashboard .btn-primary:focus,
+.dashboard .btn-primary.active,
+.dashboard .open .dropdown-toggle.btn-primary {
+  background-color: #E41C39;
+}
+
+/* line 158, ../sass/_style3.scss */
+.accordion-contents .panel-heading {
+  background-color: #E41C39;
+}
+/* line 162, ../sass/_style3.scss */
+.accordion-contents .panel-title {
+  color: #ffffff;
+}
+
+/* line 168, ../sass/_style3.scss */
+.platform-ios .popover-arrow:after {
+  background-color: #ffffff;
+}
+
+/* line 173, ../sass/_style3.scss */
+.more-options .item.popover-item {
+  color: #000000;
+}
+
+/* line 178, ../sass/_style3.scss */
+.btn {
+  background-color: #E41C39;
+}
+
+/*.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active,*/
+/* line 185, ../sass/_style3.scss */
+.open .dropdown-toggle.btn-primary {
+  background-color: #A91D46;
+}
+
+/* line 190, ../sass/_style3.scss */
+.dashboard-home {
+  border-color: #ffffff;
+}
+
+/* line 196, ../sass/_style3.scss */
+.stats .title {
+  color: #000000 !important;
+}
+
+/* line 203, ../sass/_style3.scss */
+.main-forms .title {
+  color: #000000 !important;
+}
+/* line 207, ../sass/_style3.scss */
+.main-forms .tab-item-active {
+  margin-top: -1px;
+  border-top: 4px solid #E41C39;
+  color: #E41C39 !important;
+  font-weight: bold;
+}
+/* line 214, ../sass/_style3.scss */
+.main-forms .tab-nav.tabs {
+  background-color: #D3D2D2 !important;
+  border: 0 !important;
+}
+
+/* line 222, ../sass/_style3.scss */
+.raw-forms {
+  background-color: #eee;
+}
+/* line 228, ../sass/_style3.scss */
+.raw-forms .content-form .header {
+  background-color: #E41C39;
+  color: #ECF0F1;
+}
+/* line 235, ../sass/_style3.scss */
+.raw-forms .content-form label {
+  color: #000000;
+}
+
+/* line 242, ../sass/_style3.scss */
+.item-selected {
+  background-color: #eee !important;
+}
+
+/* line 246, ../sass/_style3.scss */
+.header-title {
+  color: #E41C39;
+  font-weight: bold;
+}
+
+/* line 253, ../sass/_style3.scss */
+.sub-header .icon-form {
+  color: #E41C39;
+}
+
+/* line 259, ../sass/_style3.scss */
+.background-content {
+  -webkit-box-shadow: 0px 0px 0px 0px #777;
+  -moz-box-shadow: 0px 0px 0px 0px #777;
+  box-shadow: 0px 0px 0px 0px #777;
+  background-color: #f9f9f9 !important;
+}
+
+/* line 267, ../sass/_style3.scss */
+._draft {
+  color: #E41C39;
+  font-weight: bold;
+}
+
+/* line 272, ../sass/_style3.scss */
+._favourites {
+  color: #19AD51;
+  font-weight: bold;
+}
+
+/* line 277, ../sass/_style3.scss */
+._completed {
+  color: #F7A51C;
+  font-weight: bold;
+}
+
+/* line 282, ../sass/_style3.scss */
+.check-mark {
+  color: #19AD51;
+}
+
+/* line 286, ../sass/_style3.scss */
+.uncheck-mark {
+  color: #777;
+}
+
+/* line 290, ../sass/_style3.scss */
+.icon-action {
+  color: #E41C39 !important;
+}
+
+/* line 294, ../sass/_style3.scss */
+.content-form .row.background-content:nth-child(even) {
+  background-color: #f9f9fa !important;
+}
+
+/* line 297, ../sass/_style3.scss */
+.content-form .row.background-content:nth-child(odd) {
+  background-color: #f7e3e6 !important;
+}

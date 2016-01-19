@@ -1,0 +1,287 @@
+/* line 1, ../sass/_style1.scss */
+.background-custom-1 {
+  background-color: #A91D46 !important;
+}
+
+/* line 5, ../sass/_style1.scss */
+.background-custom-2 {
+  background-color: #eee !important;
+}
+
+/* line 9, ../sass/_style1.scss */
+.background-custom-3 {
+  background-color: #D3D2D2 !important;
+}
+
+/* line 13, ../sass/_style1.scss */
+.background-custom-4 {
+  background-color: #ffffff !important;
+}
+
+/* line 17, ../sass/_style1.scss */
+.background-custom-5 {
+  background-color: #C1ECFA !important;
+}
+
+/* line 21, ../sass/_style1.scss */
+.background-custom-6 {
+  background-color: #FFFF8C !important;
+}
+
+/* line 25, ../sass/_style1.scss */
+.background-custom-7 {
+  background-color: #CD731E !important;
+}
+
+/* line 29, ../sass/_style1.scss */
+.background-custom-8 {
+  background-color: #FDD7E4 !important;
+}
+
+/* line 33, ../sass/_style1.scss */
+.background-custom-9 {
+  background-color: #C8C8C8 !important;
+}
+
+/* line 37, ../sass/_style1.scss */
+.background-custom-10 {
+  background-color: #0599C6 !important;
+}
+
+/* line 41, ../sass/_style1.scss */
+.background-custom-11 {
+  background-color: #f9f9f9 !important;
+}
+
+/* line 48, ../sass/_style1.scss */
+.title {
+  color: #ECF0F1 !important;
+}
+
+/* line 52, ../sass/_style1.scss */
+.more-options {
+  color: #ffffff !important;
+}
+
+/* line 56, ../sass/_style1.scss */
+.dashboard {
+  /*.btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.active,*/
+}
+/* line 59, ../sass/_style1.scss */
+.dashboard .sub-header .title {
+  color: #000000 !important;
+}
+/* line 65, ../sass/_style1.scss */
+.dashboard .sub-header-header .right {
+  color: #A91D46 !important;
+}
+/* line 69, ../sass/_style1.scss */
+.dashboard .sub-header-header .right-border-bottom, .dashboard .sub-header-header .col-65 {
+  border-bottom: 2px solid #A91D46;
+}
+/* line 76, ../sass/_style1.scss */
+.dashboard .border-separator {
+  border-bottom: 1px solid #D3D2D2;
+}
+/* line 81, ../sass/_style1.scss */
+.dashboard .contents-custom-pane {
+  background-color: #ffffff;
+}
+/* line 90, ../sass/_style1.scss */
+.dashboard .contents .content .divider {
+  color: #ECF0F1;
+}
+/* line 94, ../sass/_style1.scss */
+.dashboard .contents .content .content-box {
+  border-bottom-color: #D3D2D2;
+}
+/* line 97, ../sass/_style1.scss */
+.dashboard .contents .content .content-box .header {
+  color: #000000;
+}
+/* line 101, ../sass/_style1.scss */
+.dashboard .contents .content .content-box .details {
+  color: #848484;
+}
+/* line 110, ../sass/_style1.scss */
+.dashboard .contents .content .draft .divider {
+  background-color: #A91D46;
+}
+/* line 114, ../sass/_style1.scss */
+.dashboard .contents .content .draft .content-box.background-border-left {
+  border-left-color: #A91D46;
+}
+/* line 121, ../sass/_style1.scss */
+.dashboard .contents .content .favourites .divider {
+  background-color: #19AD51;
+}
+/* line 125, ../sass/_style1.scss */
+.dashboard .contents .content .favourites .content-box.background-border-left {
+  border-left-color: #19AD51;
+}
+/* line 133, ../sass/_style1.scss */
+.dashboard .contents .content .completed .divider {
+  background-color: #F7A51C;
+}
+/* line 137, ../sass/_style1.scss */
+.dashboard .contents .content .completed .content-box.background-border-left {
+  border-left-color: #F7A51C;
+}
+/* line 147, ../sass/_style1.scss */
+.dashboard .contents.content-right {
+  background-color: #eee;
+}
+/* line 151, ../sass/_style1.scss */
+.dashboard .contents.content-left {
+  -webkit-box-shadow: 1px 0px 4px 0px #777;
+  -moz-box-shadow: 1px 0px 4px 0px #777;
+  box-shadow: 1px 0px 4px 0px #777;
+}
+/* line 161, ../sass/_style1.scss */
+.dashboard .open .dropdown-toggle.btn-primary {
+  background-color: #A91D46;
+}
+
+/* line 169, ../sass/_style1.scss */
+.accordion-contents .panel-heading {
+  background-color: #A91D46;
+}
+/* line 173, ../sass/_style1.scss */
+.accordion-contents .panel-title {
+  color: #ffffff;
+}
+
+/* line 179, ../sass/_style1.scss */
+.platform-ios .popover-arrow:after {
+  background-color: #ffffff;
+}
+
+/* line 184, ../sass/_style1.scss */
+.more-options .item.popover-item {
+  color: #000000;
+}
+
+/* line 189, ../sass/_style1.scss */
+.btn {
+  background-color: #A91D46;
+}
+
+/* line 193, ../sass/_style1.scss */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #E41C39;
+}
+
+/* line 200, ../sass/_style1.scss */
+.dashboard-home {
+  border-color: #ffffff;
+}
+
+/* line 206, ../sass/_style1.scss */
+.stats .title {
+  color: #000000 !important;
+}
+
+/* line 213, ../sass/_style1.scss */
+.main-forms .title {
+  color: #000000 !important;
+}
+/* line 217, ../sass/_style1.scss */
+.main-forms .tab-item-active {
+  margin-top: -1px;
+  border-top: 4px solid #A91D46;
+  color: #A91D46 !important;
+  font-weight: bold;
+}
+/* line 224, ../sass/_style1.scss */
+.main-forms .tab-nav.tabs {
+  background-color: #D3D2D2 !important;
+  border: 0 !important;
+}
+
+/* line 231, ../sass/_style1.scss */
+.raw-forms {
+  background-color: #eee;
+}
+/* line 237, ../sass/_style1.scss */
+.raw-forms .content-form .header {
+  background-color: #A91D46;
+  color: #ECF0F1;
+}
+/* line 244, ../sass/_style1.scss */
+.raw-forms .content-form label {
+  color: #000000;
+}
+
+/* line 256, ../sass/_style1.scss */
+.item-selected {
+  background-color: #eee !important;
+}
+
+/* line 260, ../sass/_style1.scss */
+.header-title {
+  color: #A91D46;
+  font-weight: bold;
+}
+
+/* line 267, ../sass/_style1.scss */
+.sub-header .icon-form {
+  color: #A91D46;
+}
+
+/* line 273, ../sass/_style1.scss */
+.background-content {
+  -webkit-box-shadow: 0px 0px 0px 0px #777;
+  -moz-box-shadow: 0px 0px 0px 0px #777;
+  box-shadow: 0px 0px 0px 0px #777;
+  background-color: #f9f9f9 !important;
+}
+
+/* line 281, ../sass/_style1.scss */
+._draft {
+  color: #A91D46;
+  font-weight: bold;
+}
+
+/* line 286, ../sass/_style1.scss */
+._favourites {
+  color: #19AD51;
+  font-weight: bold;
+}
+
+/* line 291, ../sass/_style1.scss */
+._completed {
+  color: #F7A51C;
+  font-weight: bold;
+}
+
+/* line 296, ../sass/_style1.scss */
+.check-mark {
+  color: #19AD51;
+  font-size: 25px;
+}
+
+/* line 301, ../sass/_style1.scss */
+.uncheck-mark {
+  color: #777;
+  font-size: 25px;
+}
+
+/* line 306, ../sass/_style1.scss */
+.icon-action {
+  color: #A91D46 !important;
+}
+
+/* line 310, ../sass/_style1.scss */
+.content-form .row.background-content:nth-child(even) {
+  background-color: #f9f9fa !important;
+}
+
+/* line 313, ../sass/_style1.scss */
+.content-form .row.background-content:nth-child(odd) {
+  background-color: #e7dade !important;
+}

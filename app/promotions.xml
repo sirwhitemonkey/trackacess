@@ -1,0 +1,39 @@
+<promotions>
+	<promotion id="1234" link_id="melb-cup" type="racing_event"
+		start_date="2015-11-01T00:00:00Z" end_date="2015-11-04T12:00:00Z"
+		kickoff="2015-11-03T17:00:00Z" name="Melbourne Cup"
+		description="Get a Bet on the race that stops two nations!" venue="Flemmington"
+		ga_parameters="utm_campaign=melb-cup&amp;utm_source=promo-page&amp;utm_medium=app">
+		<image id="321" name="melbCup" type="promotion"
+			description="Banner for Melbourne Cup Promotion on app" filename="melbcup1.png"
+			url="http://static.tab.co.nz/content/promotions/images/melbcup1.png"
+			height="50" width="200"></image>
+		<associated_events>
+			<Event id="AUR1_200_1" meeting_id="AUR1_200" event_group_id="AUR1"
+				sport_id="RACI" />
+			<Event id="RACI_205_2" meeting_id="RACI_205" event_group_id="RACI"
+				sport_id="SPRT" />
+		</associated_events>
+		<target event_id="MELB_1_1" meeting_id="MELB_1" event_group_id="MELB"
+			sport_id="RACE"></target>
+	</promotion>
+	<promotion id="1235" link_id="rwc" type="competition"
+		start_date="2015-09-10T00:00:00Z" end_date="2015-11-02T12:00:00Z"
+		kickoff="2015-09-18T17:20:00Z" name="Rugby World Cup 2015"
+		description="Go the ABs!" venue="United Kingdom"
+		ga_parameters="utm_campaign=rwc-2015&amp;utm_source=promo-page&amp;utm_medium=app">
+		<image id="322" name="RWC2015" type="promotion" description="Banner for RWC 2015 on app"
+			filename="rwc2015.png"
+			url="http://static.tab.co.nz/content/promotions/images/rwc2015.png"
+			height="50" width="200"></image>
+		<associated_events>
+			<Event id="RGWC_3_1" meeting_id="RGWC_3" event_group_id="RGWC"
+				sport_id="RGBY" />
+			<Event id="RGWC_3_2" meeting_id="RGWC_3" event_group_id="RGWC"
+				sport_id="RGBY" />
+			<Event id="RGWC_5_1" meeting_id="RGWC_5" event_group_id="RGWC"
+				sport_id="RGBY" />
+		</associated_events>
+		<target event_group_id="RGWC" sport_id="RGBY"></target>
+	</promotion>
+</promotions>

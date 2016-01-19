@@ -1,0 +1,1070 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+
+
+    <div class="content-form">
+
+        <div class="row background-content">
+            <div class="col col-35">
+
+                <div class="row">
+                    <div class="col col-10">
+
+                        <a ng-click="ctrlForm1.form.rpo_location_pwa=!ctrlForm1.form.rpo_location_pwa;"
+                           post-filled-form  src-key="rpo_location_pwa" src-value="ctrlForm1.form.rpo_location_pwa" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.rpo_location_pwa,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.rpo_location_pwa}"></i></a>
+
+                    </div>
+                    <div class="col col-90">
+                        RPO location outside of PWA - Rule 902
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm1.form.rpo_location_pwa">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-25 text-bold">
+                                Location
+                            </div>
+                            <div class="col">
+                                <input  class="background-transparent" type="text" placeholder="Location"  ng-model="ctrlForm1.form.rpo_location"
+                                        post-filled-form   src-key="rpo_location" src-value="ctrlForm1.form.rpo_location" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.rpo_location"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 ">
+                <div class="row">
+                    <div class="col header-title">
+                        Working in Tunnel or enclosed space
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65 border border-bottom-none border-left-none">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-10">
+
+                                <a ng-click="ctrlForm1.form.work_tunnel_yes=!ctrlForm1.form.work_tunnel_yes;ctrlForm1.form.work_tunnel_no=false"
+                                   post-filled-form  src-key="work_tunnel_yes" src-value="ctrlForm1.form.work_tunnel_yes" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_tunnel_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_tunnel_yes}"></i></a>
+
+                            </div>
+                            <div class="col col-90">
+                                Yes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-10">
+
+                                <a ng-click="ctrlForm1.form.work_tunnel_no=!ctrlForm1.form.work_tunnel_no;ctrlForm1.form.work_tunnel_yes=false"
+                                   post-filled-form  src-key="work_tunnel_no" src-value="ctrlForm1.form.work_tunnel_no" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_tunnel_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_tunnel_no}"></i></a>
+
+                            </div>
+                            <div class="col col-90">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.work_tunnel_yes">
+                    <div class="col text-bold">
+                        Tunnel Safety Plan approval number
+                    </div>
+                    <div class="col">
+                        <input  type="number" min="0" class="background-transparent" placeholder="Tunnel Safety Plan approval number"  ng-model="ctrlForm1.form.tunnel_safety_plan_approval_no"
+                                post-filled-form src-key="tunnel_safety_plan_approval_no" src-value="ctrlForm1.form.tunnel_safety_plan_approval_no" src-form="Form1" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 border">
+              <div class="row">
+                <div class="margin-top10 header-title">
+                    Communication Plan:
+                </div>
+              </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        Communication plan required? - Rule 901(e)
+                    </div>
+                    <div class="col col-35">
+                        <div class="row">
+                            <div class="col col-10">
+
+                                <a ng-click="ctrlForm1.form.communication_plan_yes=!ctrlForm1.form.communication_plan_yes;ctrlForm1.form.communication_plan_no=false;
+                                ctrlForm1.validateForm(true,ctrlForm1.form.communication_plan_yes,'Form2')"
+                                   post-filled-form  src-key="communication_plan_yes" src-value="ctrlForm1.form.communication_plan_yes" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.communication_plan_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.communication_plan_yes}"></i></a>
+
+                            </div>
+                            <div class="col col-90 margin-left5 margin-top3">
+                                Yes, Attached
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForm1.form.communication_plan_yes">
+                            <div class="col">
+                                <a ng-click="ctrlForms.showForm('Form2',false,false)">
+                                    <span class="text-bold"><u>Form2</u></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-35">
+                        <div class="row">
+                            <div class="col col-10">
+
+                                <a ng-click="ctrlForm1.form.communication_plan_no=!ctrlForm1.form.communication_plan_no;ctrlForm1.form.communication_plan_yes=false;
+                                ctrlForm1.validateForm(false,ctrlForm1.form.communication_plan_no,'Form2')"
+                                   post-filled-form   src-key="communication_plan_no" src-value="ctrlForm1.form.communication_plan_no" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.communication_plan_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.communication_plan_no}"></i></a>
+
+                            </div>
+                            <div class="col col-90 margin-left5 margin-top3">
+                                Not required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Protection Method required:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 margin-left15">
+
+                        <a ng-click="ctrlForm1.form.pm_blocking=!ctrlForm1.form.pm_blocking;"
+                           post-filled-form   src-key="pm_blocking" src-value="ctrlForm1.form.pm_blocking" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_blocking,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_blocking}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Blocking
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 margin-left15">
+
+                        <a ng-click="ctrlForm1.form.pm_lockout=!ctrlForm1.form.pm_lockout;"
+                           post-filled-form   src-key="pm_lockout" src-value="ctrlForm1.form.pm_lockout" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_lockout,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_lockout}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Lockout
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10 margin-left15">
+
+                        <a ng-click="ctrlForm1.form.pm_track_time_permit=!ctrlForm1.form.pm_track_time_permit;"
+                           post-filled-form   src-key="pm_track_time_permit" src-value="ctrlForm1.form.pm_track_time_permit" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_track_time_permit,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_track_time_permit}"></i></a>
+
+                    </div>
+                    <div class="col col-19 margin-top3">
+                        Track and Time Permit (Mis 60)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row" ng-if="(ctrlForm1.form.pm_blocking ||ctrlForm1.form.pm_lockout || ctrlForm1.form.pm_track_time_permit)">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.pm_single_line_area=!ctrlForm1.form.pm_single_line_area;
+                        ctrlForm1.form.pm_both_up_down=false;
+                        ctrlForm1.form.pm_up_main=false;
+                        ctrlForm1.form.pm_down_main=false;
+                        ctrlForm1.form.pm_other_lines=false;"
+                                   post-filled-form    src-key="pm_single_line_area" src-value="ctrlForm1.form.pm_single_line_area" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_single_line_area,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_single_line_area}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3">
+                                Single Line Area only - no adjacent lines
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.pm_both_up_down=!ctrlForm1.form.pm_both_up_down;
+                        ctrlForm1.form.pm_single_line_area=false;
+                        ctrlForm1.form.pm_up_main=false;
+                        ctrlForm1.form.pm_down_main=false;
+                        ctrlForm1.form.pm_other_lines=false;"
+                                   post-filled-form   src-key="pm_both_up_down" src-value="ctrlForm1.form.pm_both_up_down" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_both_up_down,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_both_up_down}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3">
+                                Both Up and Down main
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.pm_up_main=!ctrlForm1.form.pm_up_main;
+                        ctrlForm1.form.pm_single_line_area=false;
+                        ctrlForm1.form.pm_both_up_down=false;
+                        ctrlForm1.form.pm_down_main=false;
+                        ctrlForm1.form.pm_other_lines=false;"
+                                   post-filled-form   src-key="pm_up_main" src-value="ctrlForm1.form.pm_up_main" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_up_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_up_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3">
+                                Up Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.pm_down_main=!ctrlForm1.form.pm_down_main;
+                        ctrlForm1.form.pm_single_line_area=false;
+                        ctrlForm1.form.pm_both_up_down=false;
+                        ctrlForm1.form.pm_up_main=false;
+                        ctrlForm1.form.pm_other_lines=false;"
+                                   post-filled-form   src-key="pm_down_main" src-value="ctrlForm1.form.pm_down_main" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_down_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3">
+                                Down Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.pm_other_lines=!ctrlForm1.form.pm_other_lines;
+                                ctrlForm1.form.pm_single_line_area=false;
+                                ctrlForm1.form.pm_both_up_down=false;
+                                ctrlForm1.form.pm_up_main=false;
+                                ctrlForm1.form.pm_down_main=false;"
+                                   post-filled-form   src-key="pm_other_lines" src-value="ctrlForm1.form.pm_other_lines" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.pm_other_lines,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.pm_other_lines}"></i></a>
+
+                            </div>
+                            <div class="col col-50 margin-top3 margin-left5">
+                                Other Lines(Specify)
+                            </div>
+                            <div class="col" ng-if="ctrlForm1.form.pm_other_lines">
+                                <input  class="background-transparent margin-top_5" type="text" placeholder="Other Lines"  ng-model="ctrlForm1.form.pm_specify_other_lines"
+                                        post-filled-form  src-key="pm_specify_other_lines" src-value="ctrlForm1.form.pm_specify_other_lines" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.pm_specify_other_lines"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col col-10">
+
+                        <a ng-click="ctrlForm1.form.csp=!ctrlForm1.form.csp;"
+                           post-filled-form   src-key="csp" src-value="ctrlForm1.form.csp" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3 header-title">
+                        Compulsory Stop Protection:
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.csp">
+                    <div class="col col-10 margin-left15">
+
+                        <a ng-click="ctrlForm1.form.csp_e_protect_requested=!ctrlForm1.form.csp_e_protect_requested;"
+                           post-filled-form   src-key="csp_e_protect_requested" src-value="ctrlForm1.form.csp_e_protect_requested" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_e_protect_requested,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_e_protect_requested}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                       e-protect requested
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm1.form.csp">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.csp_single_line_area=!ctrlForm1.form.csp_single_line_area;
+                        ctrlForm1.form.csp_both_up_down=false;
+                        ctrlForm1.form.csp_up_main=false;
+                        ctrlForm1.form.csp_down_main=false;
+                        ctrlForm1.form.csp_other_lines=false;"
+                                   post-filled-form   src-key="csp_single_line_area" src-value="ctrlForm1.form.csp_single_line_area" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_single_line_area,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_single_line_area}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Single Line Area only - no adjacent lines
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.csp_both_up_down=!ctrlForm1.form.csp_both_up_down;
+                        ctrlForm1.form.csp_single_line_area=false;
+                        ctrlForm1.form.csp_up_main=false;
+                        ctrlForm1.form.csp_down_main=false;
+                        ctrlForm1.form.csp_other_lines=false;"
+                                   post-filled-form   src-key="csp_both_up_down" src-value="ctrlForm1.form.csp_both_up_down" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_both_up_down,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_both_up_down}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Both Up and Down main
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.csp_up_main=!ctrlForm1.form.csp_up_main;
+                        ctrlForm1.form.csp_single_line_area=false;
+                        ctrlForm1.form.csp_both_up_down=false;
+                        ctrlForm1.form.csp_down_main=false;
+                        ctrlForm1.form.csp_other_lines=false;"
+                                   post-filled-form   src-key="csp_up_main" src-value="ctrlForm1.form.csp_up_main" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_up_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_up_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Up Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm1.form.csp_down_main=!ctrlForm1.form.csp_down_main;
+                        ctrlForm1.form.csp_single_line_area=false;
+                        ctrlForm1.form.csp_both_up_down=false;
+                        ctrlForm1.form.csp_up_main=false;
+                        ctrlForm1.form.csp_other_lines=false;"
+                                   post-filled-form   src-key="csp_down_main" src-value="ctrlForm1.form.csp_down_main" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_down_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Down Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col  col-5">
+
+                                <a ng-click="ctrlForm1.form.csp_other_lines=!ctrlForm1.form.csp_other_lines;
+                        ctrlForm1.form.csp_single_line_area=false;
+                        ctrlForm1.form.csp_both_up_down=false;
+                        ctrlForm1.form.csp_down_main=false;
+                        ctrlForm1.form.csp_up_main=false;"
+                                   post-filled-form   src-key="csp_other_lines" src-value="ctrlForm1.form.csp_other_lines" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_other_lines,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_other_lines}"></i></a>
+
+                            </div>
+                            <div class="col col-50 margin-top3 margin-left_5">
+                                Other Lines(Specify)
+                            </div>
+                            <div class="col margin-top5" ng-if="ctrlForm1.form.csp_other_lines">
+                                <input  class="background-transparent margin-top_10" type="text" placeholder="Other Lines"  ng-model="ctrlForm1.form.csp_specify_other_lines"
+                                        post-filled-form src-key="csp_specify_other_lines" src-value="ctrlForm1.form.csp_specify_other_lines" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.csp_specify_other_lines"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             </div>
+
+        </div>
+
+        <div class="row background-content box-shadow-none" ng-if="ctrlForm1.form.csp">
+            <div class="col col-35 margin-top10">
+                <div class="row">
+                    <div class="col">
+                        CSP Stop Board <u>exact</u> locations: <br/>
+                        Between stations / Within station limits
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65 margin-top15">
+                <div class="row">
+                    <div class="col col-15 col-col  text-bold margin-top10">
+                        Stn
+                    </div>
+                    <div class="col col-35 margin-top3">
+                        <input   class="background-transparent" type="text" placeholder="Stn"  ng-model="ctrlForm1.form.csp_from_stn"
+                                 post-filled-form  src-key="csp_from_stn" src-value="ctrlForm1.form.csp_from_stn" src-form="Form1" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.csp_from_stn"></div>
+                    </div>
+                    <div class="col col-15  text-bold margin-top10">
+                        Stn
+                    </div>
+                    <div class="col col-35 margin-top3">
+                        <input   class="background-transparent" type="text" placeholder="Stn"  ng-model="ctrlForm1.form.csp_to_stn"
+                                 post-filled-form   src-key="csp_to_stn" src-value="ctrlForm1.form.csp_to_stn" src-form="Form1" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.csp_to_stn"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row background-content box-shadow-none" ng-if="ctrlForm1.form.csp">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col margin-top10">
+                        <b>Boards erected near / beside signals ?</b>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5">
+
+                                <a ng-click="ctrlForm1.form.csp_signals=!ctrlForm1.form.csp_signals;"
+                                   post-filled-form    src-key="csp_signals" src-value="ctrlForm1.form.csp_signals" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_signals,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_signals}"></i></a>
+
+                            </div>
+                            <div class="col col-90 margin-top3">
+                                Yes, Signals Listed
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForm1.form.csp_signals">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col col-20 text-bold">
+                                        Signals Listed
+                                    </div>
+                                    <div class="col margin-top5">
+                                        <input   type="text" class="background-transparent" placeholder="Signals Listed"  ng-model="ctrlForm1.form.csp_signals_listed"
+                                                 post-filled-form   src-key="csp_signals_listed" src-value="ctrlForm1.form.csp_signals_listed" src-form="Form1" >
+                                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.csp_signals_listed"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row background-content box-shadow-none" ng-if="ctrlForm1.form.csp">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col margin-top10">
+                        If unable to erect advanced or inner Warning <br/>
+                        Boards as specified, name location(s)
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5">
+
+                                <a ng-click="ctrlForm1.form.csp_erect_advance_inner_warning=!ctrlForm1.form.csp_erect_advance_inner_warning;"
+                                   post-filled-form   src-key="csp_erect_advance_inner_warning" src-value="ctrlForm1.form.csp_erect_advance_inner_warning" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.csp_erect_advance_inner_warning,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.csp_erect_advance_inner_warning}"></i></a>
+
+                            </div>
+                            <div class="col col- margin-top3">
+                                Yes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row"  ng-if="ctrlForm1.form.csp_erect_advance_inner_warning">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-10 margin-top10 text-bold">
+                                Locations
+                            </div>
+                            <div class="col margin-top3" ng-show="ctrlForm1.form.csp_erect_advance_inner_warning">
+                                <input   type="text" class="background-transparent" placeholder="Locations"  ng-model="ctrlForm1.form.csp_locations"
+                                         post-filled-form   src-key="csp_locations" src-value="ctrlForm1.form.csp_locations" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.csp_locations"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row background-content">
+            <div class="col col-35 margin-top10">
+                <div class="row">
+                    <div class="col header-title">
+                        Call Sign (for CSP or other worksites):
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65 margin-top15">
+                <input   type="text" class="background-transparent" placeholder="Call Sign (for CSP or other worksites)"  ng-model="ctrlForm1.form.call_sign"
+                         post-filled-form src-key="call_sign" src-value="ctrlForm1.form.call_sign" src-form="Form1" >
+                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.call_sign"></div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col col-10">
+
+                        <a ng-click="ctrlForm1.form.tw_mis88=!ctrlForm1.form.tw_mis88;"
+                           post-filled-form   src-key="tw_mis88" src-value="ctrlForm1.form.tw_mis88" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.tw_mis88,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.tw_mis88}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3 header-title">
+                       Track and Time Permit(Mis 88)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65 ">
+                <div class="row" ng-if="ctrlForm1.form.tw_mis88">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                Track Warrant Limits:
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                From
+                            </div>
+                            <div class="col col-28">
+                                <input  class="item-input-text background-transparent" type="number" step="any" min="0" placeholder="Metrage"  ng-model="ctrlForm1.form.tw_limits_from_metrage"
+                                        post-filled-form src-key="tw_limits_from_metrage" src-value="ctrlForm1.form.tw_limits_from_metrage" src-form="Form1" >
+                            </div>
+                            <div class="col col-15 text-bold">
+                                To
+                            </div>
+                            <div class="col col-28">
+                                <input  class="item-input-text background-transparent" type="number" step="any" min="0" placeholder="Metrage"  ng-model="ctrlForm1.form.tw_limits_to_metrage"
+                                        post-filled-form src-key="tw_limits_to_metrage" src-value="ctrlForm1.form.tw_limits_to_metrage" src-form="Form1" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-150">
+                <div class="row">
+                    <div class="col col-50 header-title">
+                        S&I Diagram required with sketch of CSP/Work limits if work area includes any station limits
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="ctrlForm1.form.si_diagram_yes=!ctrlForm1.form.si_diagram_yes;ctrlForm1.form.si_diagram_no=false;"
+                                   post-filled-form   src-key="si_diagram_yes" src-value="ctrlForm1.form.si_diagram_yes" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.si_diagram_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.si_diagram_yes}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3 ">
+                                Yes, Attached
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForm1.form.si_diagram_yes">
+                            <div class="col">
+                                <a ng-click="ctrlForm1.siDiagram()">
+                                    <span class="text-bold"><u>SI Diagram</u></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="ctrlForm1.form.si_diagram_no=!ctrlForm1.form.si_diagram_no;ctrlForm1.form.si_diagram_yes=false;"
+                                   post-filled-form   src-key="si_diagram_no" src-value="ctrlForm1.form.si_diagram_no" src-form="Form1" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.si_diagram_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.si_diagram_no}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-left5 margin-top3 ">
+                                Not,  Required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-150">
+                <div class="row">
+                    <div class="col col-50 header-title">
+                        Note: Working in Multi Line areas - Protection is required for work closer than 4 m form the centre
+                        of any adjacent line when protection is not being planned for adjacent lines.
+                        Contact Network Authorities to discuss
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col col-15">
+
+                                    <a ng-click="ctrlForm1.form.work_multiline_yes=!ctrlForm1.form.work_multiline_yes;ctrlForm1.form.work_multiline_no=false;"
+                                       post-filled-form   src-key="work_multiline_yes" src-value="ctrlForm1.form.work_multiline_yes" src-form="Form1" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_multiline_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_multiline_yes}"></i></a>
+
+                                </div>
+                                <div class="col col-75 margin-top3 ">
+                                    Yes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col col-15">
+
+                                    <a ng-click="ctrlForm1.form.work_multiline_no=!ctrlForm1.form.work_multiline_no;ctrlForm1.form.work_multiline_yes=false;"
+                                       post-filled-form   src-key="work_multiline_no" src-value="ctrlForm1.form.work_multiline_no" src-form="Form1" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_multiline_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_multiline_no}"></i></a>
+
+                                </div>
+                                <div class="col col-75 margin-top3 ">
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.work_multiline_yes">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                Contacted
+                            </div>
+                            <div class="col col-65">
+                                <input   type="text" class="item-input-text background-transparent" placeholder="Contacted"  ng-model="ctrlForm1.form.work_multiline_contacted"
+                                         post-filled-form   src-key="work_multiline_contacted" src-value="ctrlForm1.form.work_multiline_contacted" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm1.form.work_multiline_contacted"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                Date
+                            </div>
+                            <div class="col col-25">
+                                <input  type="date" class="date-dotted-border background-transparent"  ng-model="ctrlForm1.form.work_multiline_date" value="{{ ctrlForm1.form.work_multiline_date | date: 'yyyy-MM-dd' }}"
+                                        post-filled-form src-key="work_multiline_date" src-value="ctrlForm1.form.work_multiline_date" src-form="Form1" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                Hours
+                            </div>
+                            <div class="col col-30">
+                                <div custom-time time="ctrlForm1.form.work_multiline_hr"  key="work_multiline_hr" form="Form1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col col-10">
+
+                        <a ng-click="ctrlForm1.form.multi_worksite_activity=!ctrlForm1.form.multi_worksite_activity;"
+                           post-filled-form   src-key="multi_worksite_activity" src-value="ctrlForm1.form.multi_worksite_activity" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.multi_worksite_activity,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.multi_worksite_activity}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3 header-title">
+                        Multi Worksite Activity Required:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col margin-left15">
+                        Secondary Protection Form 9 also required
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+
+                <div class="row" ng-if="ctrlForm1.form.multi_worksite_activity">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-28 text-bold">
+                                Reporting Point Location
+                            </div>
+                            <div class="col margin-top5">
+                                <input  type="text" placeholder="Reporting point location" class="background-transparent" ng-model="ctrlForm1.form.reporting_point_location"
+                                        post-filled-form   src-key="reporting_point_location" src-value="ctrlForm1.form.reporting_point_location" src-form="Form1" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm1.form.reporting_point_location"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 ">
+                <div class="row">
+                    <div class="col col-10">
+
+                        <a ng-click="ctrlForm1.form.line_impassable=!ctrlForm1.form.line_impassable;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.line_impassable,'Form9')"
+                           post-filled-form   src-key="line_impassable" src-value="ctrlForm1.form.line_impassable" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.line_impassable,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.line_impassable}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3 header-title">
+                        Line Impassable Required:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col margin-left15">
+                        Note: Secondary Protection Form 9 also required if in multi-line area
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.line_impassable">
+                    <div class="col">
+                        <a ng-click="ctrlForms.showForm('Form9',false,false)">
+                            <span class="text-bold"><u>Form9</u></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm1.form.line_impassable">
+                    <div class="col col-15 margin-top8 text-bold">
+                        From
+                    </div>
+                    <div class="col col-30 margin-top3">
+                        <div custom-time time="ctrlForm1.form.line_impassable_from_hr" key="line_impassable_from_hr" form="Form1"></div>
+                    </div>
+                    <div class="col col-15  text-align-right margin-top8 text-bold">
+                        To
+                    </div>
+                    <div class="col col-30">
+                        <div custom-time time="ctrlForm1.form.line_impassable_to_hr" key="line_impassable_to_hr" form="Form1"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 ">
+                <div class="row padding-top5">
+                    <div class="col header-title">
+                        Re-railing Operations
+                    </div>
+                </div>
+                <div class="row padding-top5">
+                    <div class="col margin-left15">
+                        Level Crossing Alarms Disconnected
+                    </div>
+                </div>
+                <div class="row padding-top5">
+                    <div class="col margin-left15">
+                        Level Crossing Alarms On Manual Control
+                    </div>
+                </div>
+                <div class="row padding-top5">
+                    <div class="col margin-left15">
+                        3.3Kv Signals power supply turned OFF
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.re_railing=!ctrlForm1.form.re_railing;"
+                           post-filled-form   src-key="re_railing" src-value="ctrlForm1.form.re_railing" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.re_railing,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.re_railing}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.lca_disconnected=!ctrlForm1.form.lca_disconnected;"
+                           post-filled-form   src-key="lca_disconnected" src-value="ctrlForm1.form.lca_disconnected" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.lca_disconnected,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.lca_disconnected}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.lca_manual_control=!ctrlForm1.form.lca_manual_control;"
+                           post-filled-form   src-key="lca_manual_control" src-value="ctrlForm1.form.lca_manual_control" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.lca_manual_control,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.lca_manual_control}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.kv_signals=!ctrlForm1.form.kv_signals;"
+                           post-filled-form   src-key="kv_signals" src-value="ctrlForm1.form.kv_signals" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.kv_signals,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.kv_signals}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.signals_field_engineer=!ctrlForm1.form.signals_field_engineer;"
+                           post-filled-form   src-key="signals_field_engineer" src-value="ctrlForm1.form.signals_field_engineer" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.signals_field_engineer,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.signals_field_engineer}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes, Signals Field Engineer /Section man advised
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Signals Personnel must be advised a minimum of 10 days in advance of Re-Railing
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Is your Work Under Or Near Traction Overhead ?
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col header-title margin-top_10">
+                        Do you need the Overhead Power Cut Off?
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.work_under_near_traction_overhead=!ctrlForm1.form.work_under_near_traction_overhead;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.work_under_near_traction_overhead,'work_under_near_traction_overhead-Form6-8')"
+                           post-filled-form   src-key="work_under_near_traction_overhead" src-value="ctrlForm1.form.work_under_near_traction_overhead" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_under_near_traction_overhead,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_under_near_traction_overhead}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.need_overhead_power_cutoff=!ctrlForm1.form.need_overhead_power_cutoff;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.need_overhead_power_cutoff,'need_overhead_power_cutoff-Form6-8')"
+                           post-filled-form   src-key="need_overhead_power_cutoff" src-value="ctrlForm1.form.need_overhead_power_cutoff" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.need_overhead_power_cutoff,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.need_overhead_power_cutoff}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.work_under_near_traction_overhead ||ctrlForm1.form.need_overhead_power_cutoff">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.traction_personnel_advised=!ctrlForm1.form.traction_personnel_advised;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.traction_personnel_advised,'traction_personnel_advised-Form6-8')"
+                           post-filled-form   src-key="traction_personnel_advised" src-value="ctrlForm1.form.traction_personnel_advised" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.traction_personnel_advised,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.traction_personnel_advised}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        Traction Personnel advised DC - Traction form 6(WEA) or AC- Traction form 7(NIMT) or form 8(AEA)
+                        - must accompany this form
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.traction_personnel_advised">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <a ng-click="ctrlForms.showForm('Form6',false,false)">
+                                    <span class="text-bold"><u>Form6</u></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForms.tractionform6">
+                            <div class="col">
+                                <a ng-click="ctrlForms.removeform('Form6')">
+                                    <span class="text-bold margin-left15"> <i class="ion ion-close _error"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <a ng-click="ctrlForms.showForm('Form7',false,false)">
+                                    <span class="text-bold"><u>Form7</u></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForms.tractionform7">
+                            <div class="col">
+                                <a ng-click="ctrlForms.removeform('Form7')">
+                                    <span class="text-bold margin-left15"> <i class="ion ion-close _error"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <a ng-click="ctrlForms.showForm('Form8',false,false)">
+                                    <span class="text-bold"><u>Form8</u></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForms.tractionform8">
+                            <div class="col">
+                                <a ng-click="ctrlForms.removeform('Form8')">
+                                    <span class="text-bold margin-left15"> <i class="ion ion-close _error"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col  header-title">
+                        Work Train required ?
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.work_train_required=!ctrlForm1.form.work_train_required;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.work_train_required,'Form5')"
+                           post-filled-form   src-key="work_train_required" src-value="ctrlForm1.form.work_train_required" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.work_train_required,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.work_train_required}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        If Yes, also complete Form 5
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.work_train_required">
+                    <div class="col">
+                        <a ng-click="ctrlForms.showForm('Form5',false,false)">
+                            <span class="text-bold"><u>Form5</u></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col  header-title">
+                        MTMV Work and Protection Plan required ?
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm1.form.mtmv_work_protection_plan_required=!ctrlForm1.form.mtmv_work_protection_plan_required;
+                        ctrlForm1.validateForm(true,ctrlForm1.form.mtmv_work_protection_plan_required,'Form4')"
+                           post-filled-form   src-key="mtmv_work_protection_plan_required" src-value="ctrlForm1.form.mtmv_work_protection_plan_required" src-form="Form1" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm1.form.mtmv_work_protection_plan_required,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm1.form.mtmv_work_protection_plan_required}"></i></a>
+
+                    </div>
+                    <div class="col col-90 margin-top3">
+                        If Yes, also complete Form 4
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm1.form.mtmv_work_protection_plan_required">
+                    <div class="col">
+                        <a ng-click="ctrlForms.showForm('Form4',false,false)">
+                            <span class="text-bold"><u>Form4</u></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>

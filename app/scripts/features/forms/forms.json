@@ -1,0 +1,962 @@
+{
+  "isolator": {
+    "data": [
+      {
+        "id": "HS1",
+        "kilometrage": 25.837,
+        "name": "Henderson Stabling"
+      },
+      {
+        "id": "HS2",
+        "kilometrage": 25.871,
+        "name": "Henderson Stabling"
+      },
+      {
+        "id": "HS3",
+        "kilometrage": 26.035,
+        "name": "Henderson Stabling"
+      },
+      {
+        "id": "MNK0004",
+        "kilometrage": 1.387,
+        "name": "MNK Down"
+      },
+      {
+        "id": "MNK0005",
+        "kilometrage": 1.387,
+        "name": "MNK Up,Isolator"
+      },
+      {
+        "id": "NAL0321",
+        "kilometrage": 31.962,
+        "name": "NAL"
+      },
+      {
+        "id": "NAL0029",
+        "kilometrage": 2.951,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0081",
+        "kilometrage": 8.113,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0091",
+        "kilometrage": 9.097,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0123",
+        "kilometrage": 12.309,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0131",
+        "kilometrage": 13.094,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0155",
+        "kilometrage": 15.563,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0175",
+        "kilometrage": 17.534,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0263",
+        "kilometrage": 26.294,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0305",
+        "kilometrage": 30.53,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NEW0009",
+        "kilometrage": 0.851,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NEW0017",
+        "kilometrage": 1.768,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NEW0029",
+        "kilometrage": 2.84,
+        "name": "NAL Down"
+      },
+      {
+        "id": "NAL0024",
+        "kilometrage": 2.333,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0036",
+        "kilometrage": 3.715,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0080",
+        "kilometrage": 8.003,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0082",
+        "kilometrage": 8.179,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0084",
+        "kilometrage": 8.179,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0086",
+        "kilometrage": 8.535,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0090",
+        "kilometrage": 9.097,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0124",
+        "kilometrage": 12.359,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0128",
+        "kilometrage": 13.119,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0134",
+        "kilometrage": 13.431,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0166",
+        "kilometrage": 16.641,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0176",
+        "kilometrage": 17.579,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0256",
+        "kilometrage": 25.61,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0266",
+        "kilometrage": 26.552,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NAL0320",
+        "kilometrage": 31.779,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NEW0010",
+        "kilometrage": 0.893,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NEW0022",
+        "kilometrage": 2.307,
+        "name": "NAL Up"
+      },
+      {
+        "id": "NEW0031",
+        "kilometrage": 3.197,
+        "name": "NEW Down"
+      },
+      {
+        "id": "NEW0032",
+        "kilometrage": 3.197,
+        "name": "NEW Up"
+      },
+      {
+        "id": "NIMT6475",
+        "kilometrage": 647.357,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6487",
+        "kilometrage": 648.713,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6553",
+        "kilometrage": 655.144,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6595",
+        "kilometrage": 659.42,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6625",
+        "kilometrage": 662.51,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6639",
+        "kilometrage": 663.76,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6659",
+        "kilometrage": 665.93,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6709",
+        "kilometrage": 670.774,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6735",
+        "kilometrage": 673.482,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6801",
+        "kilometrage": 680.045,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6805",
+        "kilometrage": 680.596,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6811",
+        "kilometrage": 681.151,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6815",
+        "kilometrage": 681.561,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6816",
+        "kilometrage": 681.581,
+        "name": "NIMT Down"
+      },
+      {
+        "id": "NIMT6466",
+        "kilometrage": 646.645,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6474",
+        "kilometrage": 647.396,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6488",
+        "kilometrage": 648.713,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6552",
+        "kilometrage": 655.144,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6626",
+        "kilometrage": 662.51,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6644",
+        "kilometrage": 664.386,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6656",
+        "kilometrage": 665.636,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6710",
+        "kilometrage": 670.935,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6800",
+        "kilometrage": 680.085,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6803",
+        "kilometrage": 680.348,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6806",
+        "kilometrage": 680.596,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6808",
+        "kilometrage": 680.638,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6810",
+        "kilometrage": 680.989,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "NIMT6812",
+        "kilometrage": 681.151,
+        "name": "NIMT Up"
+      },
+      {
+        "id": "ONE0006",
+        "kilometrage": 0.732,
+        "name": "ONE"
+      },
+      {
+        "id": "PS1",
+        "kilometrage": 647.396,
+        "name": "Papakura Station"
+      },
+      {
+        "id": "AS1",
+        "kilometrage": 680.349,
+        "name": "West Car Sidings / Strand"
+      },
+      {
+        "id": "AS2",
+        "kilometrage": 680.368,
+        "name": "West Car Sidings / Strand"
+      },
+      {
+        "id": "AS3",
+        "kilometrage": 680.86,
+        "name": "West Car Sidings / Strand"
+      },
+      {
+        "id": "WS9",
+        "kilometrage": 657,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS8",
+        "kilometrage": 657.293,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS3",
+        "kilometrage": 657.366,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "D4",
+        "kilometrage": 657.539,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "D2",
+        "kilometrage": 657.539,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "D3",
+        "kilometrage": 657.726,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "D1",
+        "kilometrage": 657.726,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS2",
+        "kilometrage": 657.338,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS6",
+        "kilometrage": 657.775,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS7",
+        "kilometrage": 657.775,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS4",
+        "kilometrage": 657.78,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS5",
+        "kilometrage": 657.898,
+        "name": "Wiri Depot"
+      },
+      {
+        "id": "WS1",
+        "kilometrage": 657.945,
+        "name": "Wiri Depot"
+      }
+    ]
+  },
+  "tss": {
+    "data": [
+      {
+        "id": "AKD13",
+        "kilometrage": 678.9,
+        "name": "Auckland TSS"
+      },
+      {
+        "id": "AKD11",
+        "kilometrage": 678.9,
+        "name": "Auckland TSS"
+      },
+      {
+        "id": "AKD12",
+        "kilometrage": 678.9,
+        "name": "Auckland TSS"
+      },
+      {
+        "id": "AKD14",
+        "kilometrage": 678.9,
+        "name": "Auckland TSS"
+      },
+      {
+        "id": "AKD5",
+        "kilometrage": 678.9,
+        "name": "Auckland TSS"
+      },
+      {
+        "id": "GNE17",
+        "kilometrage": 21.75,
+        "name": "Glen Eden TSS"
+      },
+      {
+        "id": "GNE15",
+        "kilometrage": 21.75,
+        "name": "Glen Eden TSS"
+      },
+      {
+        "id": "GNE16",
+        "kilometrage": 21.75,
+        "name": "Glen Eden TSS"
+      },
+      {
+        "id": "GNE18",
+        "kilometrage": 21.75,
+        "name": "Glen Eden TSS"
+      },
+      {
+        "id": "NMT18",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "NMT16",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "NMT15",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "NMT17",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "NMT22",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "NMT20",
+        "kilometrage": 0.5,
+        "name": "Newmarket TSS"
+      },
+      {
+        "id": "PNR15",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR17",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR18",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR16",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR9",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR5",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "PNR3",
+        "kilometrage": 1.9,
+        "name": "Penrose TSS"
+      },
+      {
+        "id": "WSF22",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF13",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF11",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF14",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF12",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF18",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF16",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WSF3",
+        "kilometrage": 666.1,
+        "name": "Westfield TSS"
+      },
+      {
+        "id": "WIR7",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      },
+      {
+        "id": "WIR11",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      },
+      {
+        "id": "WIR13",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      },
+      {
+        "id": "WIR12",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      },
+      {
+        "id": "WIR14",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      },
+      {
+        "id": "WIR9",
+        "kilometrage": 658,
+        "name": "Wiri TSS"
+      }
+    ]
+  },
+  "termination": {
+    "data": [
+      {
+        "id": "EOEPapakura",
+        "kilometrage": 646.23,
+        "name": "NIMT"
+      },
+      {
+        "id": "EOESwanson",
+        "kilometrage": 32.3,
+        "name": "NAL"
+      },
+      {
+        "id": "EOEOnehunga",
+        "kilometrage": 3.61,
+        "name": "ONE"
+      },
+      {
+        "id": "EOEManukau",
+        "kilometrage": 1.729,
+        "name": "MNK"
+      },
+      {
+        "id": "EOEBritomart",
+        "kilometrage": 681.829,
+        "name": "NIMT"
+      }
+    ]
+  },
+  "tamper_nos": {
+    "data": [
+      {
+        "id": "ETM255",
+        "name": "CAT 09/16 Tamping machine  [MID CAT]"
+      },
+      {
+        "id": "ETM499",
+        "name": "MK6 Tamper  [TAURANGA]"
+      },
+      {
+        "id": "ETM554",
+        "name": "Plasser 2X Tamper  [BCG]"
+      },
+      {
+        "id": "ETM622",
+        "name": "MK6 Tamper  [Auckland]"
+      },
+      {
+        "id": "ETM648",
+        "name": "MK6 Tamper  [Palm Nth]"
+      },
+      {
+        "id": "ETM663",
+        "name": "MK6 Tamper  [CHCH]"
+      }
+    ]
+  },
+  "regulator_nos": {
+    "data": [
+      {
+        "id": "ETM458",
+        "name": "BE Regulator  [TAURANGA]"
+      },
+      {
+        "id": "ETM541",
+        "name": "SSP 302 Ballast Regulator  [BCG]"
+      },
+      {
+        "id": "ETM323",
+        "name": "SSP Ballast Equaliser  [MID SSP]"
+      },
+      {
+        "id": "ETM676",
+        "name": "BEKR Regulator  [Auckland]"
+      },
+      {
+        "id": "ETM635",
+        "name": "BEKR Regulator  [Palm Nth]"
+      },
+      {
+        "id": "ETM650",
+        "name": "BEKR Regulator  [CHCH]"
+      }
+    ]
+  },
+  "stabiliser_nos": {
+    "data": [
+      {
+        "id": "ETM526",
+        "name": "DTS Dynmanic Track Stabliser  [BCG"
+      },
+      {
+        "id": "ETM513",
+        "name": "Low Loader   [Auckland]"
+      }
+    ]
+  },
+  "low_loader_nos": {
+    "data": [
+      {
+        "id": "ETM595",
+        "name": "Low Loader   [Auckland]"
+      }
+    ]
+  },
+  "rail_grinder_nos": {
+    "data": [
+      {
+        "id": "ETM607",
+        "name": "RR24 Rail Grinder"
+      }
+    ]
+  },
+  "ballast_cleaner_nos": {
+    "data": [
+      {
+        "id": "ETM567",
+        "name": "RM80 Ballast Cleaner  [BCG]"
+      }
+    ]
+  },
+  "gopher_nos": {
+    "data": [
+      {
+        "id": "N/A",
+        "name": "N/A"
+      }
+    ]
+  },
+  "position_secured": {
+    "data": [
+      {
+        "id": "N",
+        "name": "N"
+      },
+      {
+        "id": "R",
+        "name": "R"
+      }
+    ]
+  },
+  "lines": {
+    "data": [
+      {
+        "id": "BLUFF",
+        "name": "Bluff Line"
+      },
+      {
+        "id": "CASLF",
+        "name": "Castlecliff Line"
+      },
+      {
+        "id": "DGAVL",
+        "name": "Dargaville Branch"
+      },
+      {
+        "id": "ECMT",
+        "name": "East Coast Main Trunk"
+      },
+      {
+        "id": "FNGD",
+        "name": "Finegand Branch"
+      },
+      {
+        "id": "GRCFD",
+        "name": "Gracefield Branch"
+      },
+      {
+        "id": "HKTKA",
+        "name": "Hokitika Line"
+      },
+      {
+        "id": "HRNBY",
+        "name": "Hornby Branch"
+      },
+      {
+        "id": "HRNBY",
+        "name": "Hornby Branch"
+      },
+      {
+        "id": "HTAPU",
+        "name": "Hautapu Branch"
+      },
+      {
+        "id": "JVILL",
+        "name": "Johnsonville Line"
+      },
+      {
+        "id": "KNLTH",
+        "name": "Kinleith Branch"
+      },
+      {
+        "id": "KPUNI",
+        "name": "Kapuni Branch"
+      },
+      {
+        "id": "MAKA",
+        "name": "Makaraka Branch"
+      },
+      {
+        "id": "MANUK",
+        "name": "Manukau Branch"
+      },
+      {
+        "id": "MDLND",
+        "name": "Midland Line"
+      },
+      {
+        "id": "MISBS",
+        "name": "Mission Bush Branch"
+      },
+      {
+        "id": "MLING",
+        "name": "Melling Branch"
+      },
+      {
+        "id": "MNL",
+        "name": "Main North Line"
+      },
+      {
+        "id": "MNPL",
+        "name": "Marton - New Plymouth Line"
+      },
+      {
+        "id": "MSL",
+        "name": "Main South Line"
+      },
+      {
+        "id": "MTMNG",
+        "name": "Mt Maunganui Branch"
+      },
+      {
+        "id": "MUPRA",
+        "name": "Murupara Line"
+      },
+      {
+        "id": "NAL",
+        "name": "North Auckland Line"
+      },
+      {
+        "id": "NIMT",
+        "name": "North Island Main Trunk"
+      },
+      {
+        "id": "NOLINE",
+        "name": "No Applicable Line"
+      },
+      {
+        "id": "NPRPT",
+        "name": "Napier Port Branch"
+      },
+      {
+        "id": "NWMKT",
+        "name": "Newmarket Line"
+      },
+      {
+        "id": "OHAI",
+        "name": "Ohai Line"
+      },
+      {
+        "id": "ONHGA",
+        "name": "Onehunga Branch"
+      },
+      {
+        "id": "PNGL",
+        "name": "Palmerston North - Gisborne Line"
+      },
+      {
+        "id": "PTCHS",
+        "name": "Port Chalmers Branch"
+      },
+      {
+        "id": "RPHOE",
+        "name": "Rapahoe Branch"
+      },
+      {
+        "id": "RTRUA",
+        "name": "Rotorua Branch"
+      },
+      {
+        "id": "RTWRO",
+        "name": "Rotowaro Branch"
+      },
+      {
+        "id": "SNL",
+        "name": "Stillwater - Ngakawau Line"
+      },
+      {
+        "id": "SOL",
+        "name": "Stratford – Okahukura Line"
+      },
+      {
+        "id": "STHDN",
+        "name": "Southdown Branch"
+      },
+      {
+        "id": "TIN",
+        "name": "Tinwald Branch"
+      },
+      {
+        "id": "TNTUA",
+        "name": "Taneatua Branch"
+      },
+      {
+        "id": "TRIIE",
+        "name": "Taieri Branch"
+      },
+      {
+        "id": "WGIFT",
+        "name": "Wanganui Branch"
+      },
+      {
+        "id": "WITOA",
+        "name": "Waitoa Branch"
+      },
+      {
+        "id": "WPTIL",
+        "name": "Westport Branch"
+      },
+      {
+        "id": "WRAPA",
+        "name": "Wairarapa Line"
+      },
+      {
+        "id": "WRIPT",
+        "name": "Whangarei Port Branch"
+      },
+      {
+        "id": "WTARA",
+        "name": "Waitara Branch"
+      }
+    ]
+  },
+  "substations": {
+    "data": [
+      {
+        "id": "substation1",
+        "name": "Substation  1"
+      },
+      {
+        "id": "substation2",
+        "name": "Substation 2"
+      }
+    ]
+  },
+  "wellingplatforms": {
+    "data": [
+      {
+        "id": "wellingtonplatform1",
+        "name": "Wellington Platform  1"
+      },
+      {
+        "id": "wellingtonplatform2",
+        "name": "Wellington Platform 2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+<ion-view cache-view="false" class="main-forms">
+
+    <ion-header-bar position top="44" ios-top="64" class="sub-header bar-stable background-white02">
+        <span class="title left"><i class="ion {{ctrlForms.icon}} icon-form"> </i> {{ctrlForms.title | cutoffLabel:30}}</span>
+        <div class="controls" ng-class="{'detachform':ctrlForms.detachform}">
+            <div class="row">
+                <div class="col col-25 separator margin-top_10">
+                    <div class="header grey07 text-align-center">
+                        STATUS
+                    </div>
+                    <div class="actions text-align-center margin-top5">
+                        <span ng-class="{'_draft': ctrlForms.status === 'Draft', '_favourites':ctrlForms.status === 'Favourites','_completed':ctrlForms.status === 'Completed'}">{{ctrlForms.status}}</span>
+
+                    </div>
+                </div>
+                <div class="col col-100 separator margin-top_10">
+                    <div class="header grey07">
+                        ACTIONS
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-sm" ng-click="ctrlForms.favourites()" ng-if="(ctrlForms.status !== 'Favourites')">
+                            <i class="ion ion-ios-star"></i>  Favourites
+                         </button>
+
+                        <button class="btn btn-sm" ng-click="ctrlForms.favourites()" ng-if="(ctrlForms.status === 'Favourites')">
+                            <i class="ion ion-asterisk"></i> Untag
+                        </button>
+
+                        <!--
+                        <button ng-if="ctrlForms.detachform" ng-click="ctrlForms.removeform('Form3')" class="btn btn-sm" ><i class="ion ion-ios-grid-view-outline"></i>  Detach</button>
+                        -->
+
+                        <button class="btn btn-sm" ng-click="ctrlForms.remove()"><i class="ion ion-ios-trash"></i>  Remove</button>
+                        <button class="btn btn-sm" ng-click="ctrlForms.submit()"><i class="ion ion-ios-box"></i>  Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-header-bar>
+
+
+    <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+        <ion-tab  ng-click="ctrlForms.showForm('Overview')" title="Overview" icon-off="ion-ios-list-outline" icon-on="ion-ios-list">
+            <ion-nav-view  name="tab-overview"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form1')" title="Form 1" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view  name="tab-form1"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form2')" title="Form 2" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form2"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form3')" title="Form 3" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form3"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form4')" title="Form 4" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form4"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form5')" title="Form 5" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form5"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form6')" title="Form 6" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form6"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form7')" title="Form 7" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form7"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form8')" title="Form 8" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form8"></ion-nav-view>
+        </ion-tab>
+        <ion-tab  ng-click="ctrlForms.showForm('Form9')" title="Form 9" icon-off="ion-document" icon-on="ion-document-text">
+            <ion-nav-view name="tab-form9"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+
+
+</ion-view>
+
+

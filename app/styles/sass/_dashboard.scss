@@ -1,0 +1,183 @@
+.dashboard {
+
+  .scroll-content-contents {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+
+  }
+
+  .scroll-content {
+    margin-top : -45px;
+  }
+
+
+
+  .btn-primary {
+    margin: 0 auto;
+    height: 47px;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 0;
+    letter-spacing: 0;
+    text-shadow: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    -webkit-animation: shadowFadeOut 0.4s;
+    -moz-animation: shadowFadeOut 0.4s;
+  }
+
+  .sub-header-header {
+    position: absolute;
+    //margin-top:55px;
+    width: 100% !important;
+    height: 55px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+
+
+    .right-border-bottom {
+      border-bottom: 4px solid;
+    }
+
+    .title {
+      font-family: $font_Roboto_regular;
+      text-transform: none;
+      padding: 15px;
+      font-size: 17px;
+    }
+
+
+    .left{
+      float: left;
+      margin-left: 5px;
+    }
+
+    .control {
+      float: right;
+      z-index: 1;
+      margin-top: 4px;
+
+
+      button {
+        height: 44px;
+      }
+    }
+
+    .right {
+      float:right;
+      margin-right: 10px;
+    }
+
+    .searchbox {
+      margin-top: 3px;
+      position: absolute;
+      width: 250px;
+    }
+
+
+  }
+
+
+  .more {
+    margin-top: 5px;
+    width: 80px;
+    float: right;
+    z-index: 1;
+  }
+
+  .border-separator {
+    margin-bottom: -7px;
+  }
+
+
+  .contents-custom-pane {
+    height: 700px;
+  }
+
+  .contents{
+
+    display: inline-block;
+
+
+
+    .data-contents{
+      overflow-y: scroll;
+      -webkit-box-shadow: 1px 0px 4px 0px $grey03;
+      -moz-box-shadow: 1px 0px 4px 0px $grey03;
+      box-shadow: 1px 0px 4px 0px $grey03;
+      padding-bottom: 40px;
+      width: auto;
+      padding-right: 8px;
+      background-color: $white02;
+    }
+
+    .footer {
+
+      -webkit-box-shadow: 0px 0px 4px 0px $grey03;
+      -moz-box-shadow: 0px 0px 4px 0px $grey03;
+      box-shadow: 0px 0px 4px 0px $grey03;
+      text-align: center;
+      height: 50px;
+      width:auto;
+      margin-right: -5px;
+
+      .info {
+        color: $black !important;
+        line-height: 3;
+
+      }
+    }
+
+    .content{
+      padding: 10px 20px 20px 30px;
+
+      .content-box{
+        padding: 7px;
+        border-left: 3px solid;
+      }
+
+      .divider{
+        padding: 3px 10px;
+        font-size: 14px;
+        width: 120px;
+        text-align: center;
+      }
+
+      .padding-top3 {
+        padding-top: 3px;
+
+      }
+
+    }
+
+  }
+
+  .contents.content-right {
+    float:right;
+    border-bottom: 0;
+    padding:0;
+  }
+
+
+}
+
+
+.duplicate-forms-view {
+  .scroll-content {
+    margin-top: 55px;
+  }
+
+  .list.list-inset.searchbox {
+    margin-top: 50px;
+  }
+}
+
+.platform-ios .popover .scroll-content{
+  margin: 8px;
+}

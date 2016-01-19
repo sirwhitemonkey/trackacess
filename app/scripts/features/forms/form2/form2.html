@@ -1,0 +1,286 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+    <div class="content-form">
+
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Working on the (***)
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5 ">
+                        <a ng-click="ctrlForm2.form.single_line_area=!ctrlForm2.form.single_line_area;
+                        ctrlForm2.form.up_main=false;
+                        ctrlForm2.form.down_main=false;
+                        ctrlForm2.form.siding_loops=false;"
+                           post-filled-form src-key="single_line_area" src-value="ctrlForm2.form.single_line_area" src-form="Form2" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm2.form.single_line_area,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm2.form.single_line_area}"></i></a>
+
+                    </div>
+                    <div class="col col-75 margin-left5 margin-top3">
+                        Single Line Area only - no adjacent lines
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 ">
+
+                        <a ng-click="ctrlForm2.form.up_main=!ctrlForm2.form.up_main;
+                        ctrlForm2.form.single_line_area=false;
+                        ctrlForm2.form.down_main=false;
+                        ctrlForm2.form.siding_loops=false;"
+                           post-filled-form src-key="up_main" src-value="ctrlForm2.form.up_main" src-form="Form2" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm2.form.up_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm2.form.up_main}"></i></a>
+                    </div>
+                    <div class="col col-75 margin-left5 margin-top3">
+                        Up Main
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 ">
+
+                        <a ng-click="ctrlForm2.form.down_main=!ctrlForm2.form.down_main;
+                        ctrlForm2.form.up_main=false;
+                        ctrlForm2.form.single_line_area=false;
+                        ctrlForm2.form.siding_loops=false;"
+                           post-filled-form src-key="down_main" src-value="ctrlForm2.form.down_main" src-form="Form2" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm2.form.down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm2.form.down_main}"></i></a>
+
+
+                    </div>
+                    <div class="col col-75 margin-left5 margin-top3">
+                        Down Main
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-5 ">
+
+                        <a ng-click="ctrlForm2.form.siding_loops=!ctrlForm2.form.siding_loops;
+                        ctrlForm2.form.up_main=false;
+                        ctrlForm2.form.single_line_area=false;
+                        ctrlForm2.form.down_main=false;"
+                           post-filled-form src-key="siding_loops" src-value="ctrlForm2.form.siding_loops" src-form="Form2" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm2.form.siding_loops,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm2.form.siding_loops}"></i></a>
+
+
+                    </div>
+                    <div class="col col-75 margin-left5 margin-top3">
+                         Siding Loops
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="row background-content">
+            <div class="col col-150">
+                <div class="row">
+                    <div class="col col header-title">
+                        List the actual locations the RPO will be in th work area on the day
+                    </div>
+                    <div class="col header-title">
+                        Is T/C contact available from location ?
+                    </div>
+                    <div class="col header-title">
+                        Is communication confirmed from RPO location/s
+                        in the work area on the day to CSP board locations ?
+                    </div>
+                    <div class="col col-5">
+                        <i class="ion ion-ios-plus icon-action align-right" ng-click="ctrlForm2.newRPOLocation()"></i>
+                    </div>
+                </div>
+                <div class="row" ng-repeat="o in ctrlForm2.form.rpo_locations">
+
+                    <div class="col col">
+                        <div class="row">
+                            <div class="col margin-top_5">
+                                <input type="text" placeholder="Locations" class="background-transparent" ng-model="o.location"
+                                       post-filled-form src-key="rpo_locations" src-value="ctrlForm2.form.rpo_locations" child-key="{{$index}}_location" src-form="Form2">
+                                <div ng-hide="true" capitalize first-character="true" src-item="o.location"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="o.tc_contact.yes=!o.tc_contact.yes; o.tc_contact.no=false;"
+                                post-filled-form src-key="rpo_locations" src-value="ctrlForm2.form.rpo_locations" child-key="{{$index}}_tc_contact.yes" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.tc_contact.yes,'ion ion-ios-circle-outline uncheck-mark':!o.tc_contact.yes}"></i></a>
+
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                            <div class="col col-15">
+
+                                <a ng-click="o.tc_contact.no=!o.col2.no;o.tc_contact.yes=false;"
+                                   post-filled-form src-key="rpo_locations" src-value="ctrlForm2.form.rpo_locations" child-key="{{$index}}_tc_contact.no" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark': o.tc_contact.no ,'ion ion-ios-circle-outline uncheck-mark':!o.tc_contact.no}"></i></a>
+
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="o.communication_tpo_locations.yes=!o.communication_tpo_locations.yes; o.communication_tpo_locations.no=false;"
+                                   post-filled-form src-key="rpo_locations" src-value="ctrlForm2.form.rpo_locations" child-key="{{$index}}_communication_tpo_locations.yes" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.communication_tpo_locations.yes,'ion ion-ios-circle-outline uncheck-mark':!o.communication_tpo_locations.yes}"></i></a>
+
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                            <div class="col col-15">
+
+                                <a ng-click="o.communication_tpo_locations.no=!o.communication_tpo_locations.no;o.communication_tpo_locations.yes=false;"
+                                   post-filled-form src-key="rpo_locations" src-value="ctrlForm2.form.rpo_locations" child-key="{{$index}}_communication_tpo_locations.no" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.communication_tpo_locations.no,'ion ion-ios-circle-outline uncheck-mark':!o.communication_tpo_locations.no}"></i></a>
+
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-5 margin-top10">
+                        <i class="ion ion-ios-minus icon-action align-right" ng-click="ctrlForm2.removeRPOLocation($index)"></i>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        <div class="row background-content">
+            <div class="col col-150">
+                <div class="row">
+                    <div class="col header-title">
+                        Worksite Number
+                    </div>
+                    <div class="col header-title">
+                        Worksite Name
+                    </div>
+                    <div class="col header-title">
+                        Is Channel 1/5 Radio coverage confirmed between RPO locations and each work site ?
+                    </div>
+                    <div class="col header-title">
+                        Is Cell phone coverage confirmed between RPO locations and each work site ?
+                    </div>
+                    <div class="col header-title">
+                        Worksite Description
+                    </div>
+                    <div class="col col-5">
+                        <i class="ion ion-ios-plus icon-action align-right" ng-click="ctrlForm2.newWorksiteInformation()"></i>
+                    </div>
+                </div>
+                <div class="row" ng-repeat="o in ctrlForm2.form.worksite_information">
+
+                    <div class="col col">
+                        <div class="row">
+                            <div class="col margin-top_5 margin-left15">
+                                <input type="number" min="0" class="background-transparent" placeholder="Worksite" ng-model="o.worksite_number"
+                                       post-filled-form src-key="worksite_information" src-value="ctrlForm2.form.worksite_information" child-key="{{$index}}_worksite_number"  src-form="Form2" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col">
+                        <div class="row">
+                            <div class="col margin-top_5">
+                                <input type="text" class="background-transparent" placeholder="Worksite Name" ng-model="o.worksite_name"
+                                       post-filled-form  src-key="worksite_information" src-value="ctrlForm2.form.worksite_information" child-key="{{$index}}_worksite_name" src-form="Form2" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="o.worksite_name"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="o.channel_radio_coverage.yes=!o.channel_radio_coverage.yes; o.channel_radio_coverage.no=false;"
+                                   post-filled-form src-key="worksite_information" src-value="ctrlForm2.form.worksite_information"   child-key="{{$index}}_channel_radio_coverage.yes" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.channel_radio_coverage.yes,'ion ion-ios-circle-outline uncheck-mark':!o.channel_radio_coverage.yes}"></i></a>
+
+                            </div>
+                            <div class="col margin-left10 margin-top3">
+                                Yes
+                            </div>
+                            <div class="col col-15">
+
+                                <a ng-click="o.channel_radio_coverage.no=!o.channel_radio_coverage.no;o.channel_radio_coverage.yes=false;"
+                                   post-filled-form src-key="worksite_information" src-value="ctrlForm2.form.worksite_information" child-key="{{$index}}_channel_radio_coverage.no" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark': o.channel_radio_coverage.no ,'ion ion-ios-circle-outline uncheck-mark':!o.channel_radio_coverage.no}"></i></a>
+
+                            </div>
+                            <div class="col  margin-left10 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15">
+
+                                <a ng-click="o.cellphone_coverage.yes=!o.cellphone_coverage.yes; o.cellphone_coverage.no=false;"
+                                   post-filled-form src-key="worksite_information" src-value="ctrlForm2.form.worksite_information" child-key="{{$index}}_cellphone_coverage.yes" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.cellphone_coverage.yes,'ion ion-ios-circle-outline uncheck-mark':!o.cellphone_coverage.yes}"></i></a>
+
+                            </div>
+                            <div class="col  margin-left10 margin-top3">
+                                Yes
+                            </div>
+                            <div class="col col-15">
+
+                                <a ng-click="o.cellphone_coverage.no=!o.cellphone_coverage.no;o.cellphone_coverage.yes=false;ctrlForm2"
+                                   post-filled-form src-key="worksite_information" src-value="ctrlForm2.form.worksite_information" child-key="{{$index}}_cellphone_coverage.no" child-value="o" src-form="Form2"> <i ng-class="{'ion ion-ios-checkmark check-mark':o.cellphone_coverage.no,'ion ion-ios-circle-outline uncheck-mark':!o.cellphone_coverage.no}"></i></a>
+
+                            </div>
+                            <div class="col margin-left10  margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col margin-top10">
+                        <textarea class="background-transparent" placeholder="Worksite Description" ng-model="o.worksite_description" rows="5"
+                                  post-filled-form  src-key="worksite_information" src-value="ctrlForm2.form.worksite_information"  src-form="Form2" > </textarea>
+                        <div ng-hide="true" capitalize first-character="true" src-item="o.worksite_description"></div>
+                    </div>
+
+                    <div class="col col-5 margin-top10">
+                        <i class="ion ion-ios-minus icon-action align-right" ng-click="ctrlForm2.removeWorksiteInformation($index)"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--
+
+        <div class="row">
+            <div class="col col-35 border  border-bottom-none">
+                <span class="text-bold">
+                If you have ticked any 'no' boxes; what is the alternate
+                communications process confirmed between RPO locations and:
+                </span>
+                <br/>
+                <ul>
+                    <li>CSP board locations?</li>
+                    <li>Train Control ?</li>
+                    <li>Work sites?</li>
+                </ul>
+                <br/>
+            </div>
+            <div class="col col-65  border border-bottom-none border-left-none">
+                <textarea class="background-transparent" placeholder="Provide details for delay info Bulletin" ng-model="ctrlForm2.form.form2_field6_b" rows="10"
+                          post-filled-form src-key="form2_field6_b" src-value="ctrlForm2.form.form2_field6_b" src-form="Form2" >
+                </textarea>
+            </div>
+        </div>
+        -->
+
+
+    </div>
+
+</div>

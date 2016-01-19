@@ -1,0 +1,1661 @@
+/* line 24, ../sass/_dropdown.scss */
+dropdown {
+  float: left;
+  display: block;
+  width: 250px;
+}
+/* line 29, ../sass/_dropdown.scss */
+dropdown > div {
+  float: left;
+  width: 100%;
+}
+/* line 33, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-display {
+  float: left;
+  width: 100%;
+  background: white;
+  height: 40px;
+  cursor: pointer;
+  border: solid 1px #DDD;
+  box-sizing: border-box;
+}
+/* line 43, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-display > * {
+  float: left;
+  height: 100%;
+  line-height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 49, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-display > span {
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 34px;
+  padding-left: 10px;
+}
+/* line 57, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-display > span.placeholder {
+  color: #AAA;
+}
+/* line 63, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-display > i {
+  position: relative;
+  width: 14px;
+  margin-left: -24px;
+  font-size: 1.125em;
+  font-weight: bold;
+  padding-right: 10px;
+  text-align: right;
+}
+/* line 74, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list {
+  float: left;
+  width: 100%;
+  position: relative;
+  width: 100%;
+  transform: scale(1, 0);
+  transition: transform ease 250ms;
+}
+/* line 83, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list .item-dropdown {
+  width: 150px;
+}
+/* line 88, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  cursor: pointer;
+  background: white;
+  overflow: scroll;
+  height: 300px;
+}
+/* line 97, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: solid 1px #DDD;
+  border-top: none;
+}
+/* line 107, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div:hover {
+  background: #F0F0F0;
+}
+/* line 111, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div.selected {
+  background: #2875C7;
+  color: white;
+}
+/* line 116, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div > * {
+  line-height: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 120, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div > div {
+  float: left;
+  position: relative;
+  padding-right: 30px;
+  box-sizing: border-box;
+  color: inherit;
+}
+/* line 129, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div > span {
+  margin-left: 5px;
+}
+/* line 133, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div > i {
+  float: left;
+  width: 20px;
+  margin-left: -20px;
+  display: none;
+}
+/* line 140, ../sass/_dropdown.scss */
+dropdown > div > div.dropdown-list > div > div.selected > i {
+  display: inline-block;
+}
+/* line 148, ../sass/_dropdown.scss */
+dropdown > div.show > div.dropdown-list {
+  transform: scale(1, 1);
+  z-index: 1;
+}
+
+/* fonts */
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-light";
+  src: url("../../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+/* css reset */
+/* line 18, ../sass/_common.scss */
+body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary, blockquote, q, th, td, caption, table,
+div, span, object, iframe, p, button,
+pre, a, abbr, acronym, address,
+code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, input, select, textarea
+caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: "Roboto-regular", Helvetica Neue, Helvetica, Arial;
+  vertical-align: baseline;
+  -webkit-appearance: none;
+  -webkit-touch-callout: none;
+  /*
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  */
+}
+
+/* line 47, ../sass/_common.scss */
+.heading {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 10px;
+  min-width: 30px;
+  height: 43px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 44px;
+}
+
+/* line 63, ../sass/_common.scss */
+.heading.bold {
+  font-weight: 500;
+}
+
+/* line 66, ../sass/_common.scss */
+.heading.center {
+  text-align: center;
+}
+
+/* line 70, ../sass/_common.scss */
+.heading.left {
+  text-align: left;
+}
+
+/* line 74, ../sass/_common.scss */
+.title {
+  text-transform: uppercase;
+  font-family: "Roboto-bold";
+}
+
+/* line 80, ../sass/_common.scss */
+.grey01 {
+  color: #D3D2D2;
+}
+
+/* line 83, ../sass/_common.scss */
+.grey01-background {
+  background-color: #D3D2D2 !important;
+}
+
+/* line 87, ../sass/_common.scss */
+.grey02 {
+  color: #eee;
+}
+
+/* line 91, ../sass/_common.scss */
+.grey02-background {
+  background-color: #eee !important;
+}
+
+/* line 95, ../sass/_common.scss */
+.red01-background {
+  background-color: #A91D46 !important;
+}
+
+/* line 99, ../sass/_common.scss */
+.green01 {
+  color: #218E27;
+}
+
+/* line 103, ../sass/_common.scss */
+.red01 {
+  color: #A91D46 !important;
+}
+
+/* line 107, ../sass/_common.scss */
+.grey07 {
+  color: #838383;
+}
+
+/* line 111, ../sass/_common.scss */
+.black {
+  color: #000000 !important;
+}
+
+/* line 115, ../sass/_common.scss */
+.sub-header {
+  height: 55px !important;
+  position: absolute;
+}
+
+/* line 121, ../sass/_common.scss */
+.sub-header .title {
+  font-family: "Roboto-light";
+  text-transform: none;
+  font-size: 20px !important;
+  margin-top: 5px !important;
+  width: 80%;
+}
+
+/* line 129, ../sass/_common.scss */
+.sub-header .title.left {
+  text-align: left;
+}
+
+/* line 133, ../sass/_common.scss */
+.col-35 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 35%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+/* line 143, ../sass/_common.scss */
+.col-65 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 65%;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+/* line 153, ../sass/_common.scss */
+.col-8 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 8%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 8%;
+  -ms-flex: 0 0 8%;
+  flex: 0 0 8%;
+  max-width: 8%;
+}
+
+/* line 163, ../sass/_common.scss */
+.border-none {
+  border: 0px !important;
+}
+
+/* line 167, ../sass/_common.scss */
+.border-bottom {
+  border-bottom: 1px solid !important;
+}
+
+/* line 171, ../sass/_common.scss */
+.main-header-title {
+  left: 0 !important;
+  position: fixed !important;
+  width: 100%;
+}
+
+/* line 179, ../sass/_common.scss */
+.more-options.popover {
+  height: 320px !important;
+}
+/* line 181, ../sass/_common.scss */
+.more-options.popover .panel-body {
+  padding: 0;
+}
+
+/* line 188, ../sass/_common.scss */
+.dashboard-home {
+  z-index: 1;
+}
+
+/* line 192, ../sass/_common.scss */
+.popover-content {
+  width: 100%;
+  padding: 0;
+}
+/* line 196, ../sass/_common.scss */
+.popover-content .content {
+  height: 140px;
+  margin: 5px;
+}
+
+/* line 204, ../sass/_common.scss */
+.col-28 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 28%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 28%;
+  -ms-flex: 0 0 28%;
+  flex: 0 0 28%;
+  max-width: 28%;
+}
+
+/* line 214, ../sass/_common.scss */
+.col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 5%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 5%;
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5%;
+}
+
+/* line 224, ../sass/_common.scss */
+.col-15 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 15%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+/* line 234, ../sass/_common.scss */
+.col-100 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* line 244, ../sass/_common.scss */
+.col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+/* line 254, ../sass/_common.scss */
+.col-60 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+/* line 266, ../sass/_common.scss */
+.view-container .tab-content {
+  overflow-y: scroll;
+}
+
+/* line 271, ../sass/_common.scss */
+input[type='text'],
+input[type='number'],
+textarea {
+  width: 100%;
+}
+
+/* line 278, ../sass/_common.scss */
+input[type='date'] {
+  width: 160px;
+  padding-left: 10px;
+}
+
+/* line 285, ../sass/_common.scss */
+.margin-top8 {
+  margin-top: 8px !important;
+}
+
+/* line 288, ../sass/_common.scss */
+.margin-top70 {
+  margin-top: 70px !important;
+}
+
+/* line 292, ../sass/_common.scss */
+.margin-top25 {
+  margin-top: 22px !important;
+}
+
+/* line 296, ../sass/_common.scss */
+.margin-top15 {
+  margin-top: 15px !important;
+}
+
+/* line 300, ../sass/_common.scss */
+.margin-top10 {
+  margin-top: 10px !important;
+}
+
+/* line 304, ../sass/_common.scss */
+.margin-top_10 {
+  margin-top: -10px !important;
+}
+
+/* line 308, ../sass/_common.scss */
+.margin-top_3 {
+  margin-top: -3px !important;
+}
+
+/* line 312, ../sass/_common.scss */
+.margin-top5 {
+  margin-top: 5px !important;
+}
+
+/* line 316, ../sass/_common.scss */
+.margin-top8 {
+  margin-top: 8px !important;
+}
+
+/* line 320, ../sass/_common.scss */
+.margin-top220 {
+  margin-top: 220px;
+}
+
+/* line 324, ../sass/_common.scss */
+.margin-top20 {
+  margin-top: 20px;
+}
+
+/* line 328, ../sass/_common.scss */
+.margin-top3 {
+  margin-top: 3px;
+}
+
+/* line 331, ../sass/_common.scss */
+.margin-top30 {
+  margin-top: 30px;
+}
+
+/* line 335, ../sass/_common.scss */
+.margin-top130 {
+  margin-top: 140px;
+}
+
+/* line 339, ../sass/_common.scss */
+.margin-top_5 {
+  margin-top: -5px !important;
+}
+
+/* line 343, ../sass/_common.scss */
+.margin-top_15 {
+  margin-top: -15px !important;
+}
+
+/* line 347, ../sass/_common.scss */
+.margin-top_20 {
+  margin-top: -20px !important;
+}
+
+/* line 351, ../sass/_common.scss */
+.padding-none {
+  padding: 0;
+}
+
+/* line 355, ../sass/_common.scss */
+.padding10 {
+  padding: 10px !important;
+}
+
+/* line 359, ../sass/_common.scss */
+.padding-top15 {
+  padding-top: 15px !important;
+}
+
+/* line 363, ../sass/_common.scss */
+.padding-top10 {
+  padding-top: 10px !important;
+}
+
+/* line 368, ../sass/_common.scss */
+.padding-top30 {
+  padding-top: 30px !important;
+}
+
+/* line 372, ../sass/_common.scss */
+.padding-top20 {
+  padding-top: 20px !important;
+}
+
+/* line 375, ../sass/_common.scss */
+.padding-top40 {
+  padding-top: 40px !important;
+}
+
+/* line 378, ../sass/_common.scss */
+.padding-top28 {
+  padding-top: 28px !important;
+}
+
+/* line 381, ../sass/_common.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 385, ../sass/_common.scss */
+.text-align-left {
+  text-align: left;
+}
+
+/* line 389, ../sass/_common.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+/* line 393, ../sass/_common.scss */
+.border-top-none {
+  border-top: 0 !important;
+}
+
+/* line 397, ../sass/_common.scss */
+.border-bottom-none {
+  border-bottom: 0 !important;
+}
+
+/* line 401, ../sass/_common.scss */
+.border-left-none {
+  border-left: 0 !important;
+}
+
+/* line 405, ../sass/_common.scss */
+.border-right-none {
+  border-right: 0 !important;
+}
+
+/* line 409, ../sass/_common.scss */
+._error {
+  color: #ac2925 !important;
+}
+
+/* line 413, ../sass/_common.scss */
+._normal {
+  color: #ffffff !important;
+}
+
+/* line 417, ../sass/_common.scss */
+._verified {
+  color: #218E27 !important;
+}
+
+/* line 421, ../sass/_common.scss */
+.error-border {
+  border-bottom: 3px solid #ac2925 !important;
+}
+
+/* line 425, ../sass/_common.scss */
+.messaging {
+  font-size: 30px;
+}
+
+/* line 430, ../sass/_common.scss */
+.text-align-right {
+  text-align: right;
+}
+
+/* line 434, ../sass/_common.scss */
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 439, ../sass/_common.scss */
+.margin5 {
+  margin: 5px;
+}
+
+/* line 443, ../sass/_common.scss */
+.margin-left15 {
+  margin-left: 15px !important;
+}
+
+/* line 447, ../sass/_common.scss */
+.margin-left10 {
+  margin-left: 10px !important;
+}
+
+/* line 451, ../sass/_common.scss */
+.margin-left_15 {
+  margin-left: -15px !important;
+}
+
+/* line 455, ../sass/_common.scss */
+.margin-left5 {
+  margin-left: 5px !important;
+}
+
+/* line 458, ../sass/_common.scss */
+.margin-left_5 {
+  margin-left: -5px !important;
+}
+
+/* line 462, ../sass/_common.scss */
+.margin-left50 {
+  margin-left: 50px !important;
+}
+
+/* line 466, ../sass/_common.scss */
+.margin-right_5 {
+  margin-right: -5px !important;
+}
+
+/* line 470, ../sass/_common.scss */
+label {
+  color: #000000 !important;
+}
+
+/* line 474, ../sass/_common.scss */
+.background-white02 {
+  background-color: #ffffff !important;
+}
+
+/* line 478, ../sass/_common.scss */
+.btn-sm {
+  background-color: #D3D2D2 !important;
+}
+
+/* line 482, ../sass/_common.scss */
+.background-transparent {
+  background-color: transparent !important;
+}
+
+/* line 486, ../sass/_common.scss */
+.icon-action {
+  font-size: 25px !important;
+}
+
+/* line 490, ../sass/_common.scss */
+.date-dotted-border {
+  border-style: dotted;
+  border: 1px dotted #838383 !important;
+  padding: 10px;
+}
+
+/* line 496, ../sass/_common.scss */
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+/* override ionic css */
+/* line 504, ../sass/_common.scss */
+.loading-container .loading {
+  width: 45%;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* override bootstrap */
+/* line 511, ../sass/_common.scss */
+.modal-backdrop {
+  background-color: transparent;
+}
+
+/* line 3, ../sass/_dashboard.scss */
+.dashboard .scroll-content-contents {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* line 10, ../sass/_dashboard.scss */
+.dashboard .scroll-content {
+  margin-top: -45px;
+}
+/* line 16, ../sass/_dashboard.scss */
+.dashboard .btn-primary {
+  margin: 0 auto;
+  height: 47px;
+  width: 180px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 0;
+  letter-spacing: 0;
+  text-shadow: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-animation: shadowFadeOut 0.4s;
+  -moz-animation: shadowFadeOut 0.4s;
+}
+/* line 33, ../sass/_dashboard.scss */
+.dashboard .sub-header-header {
+  position: absolute;
+  width: 100% !important;
+  height: 55px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+/* line 44, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .right-border-bottom {
+  border-bottom: 4px solid;
+}
+/* line 48, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .title {
+  font-family: "Roboto-regular";
+  text-transform: none;
+  padding: 15px;
+  font-size: 17px;
+}
+/* line 56, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .left {
+  float: left;
+  margin-left: 5px;
+}
+/* line 61, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .control {
+  float: right;
+  z-index: 1;
+  margin-top: 4px;
+}
+/* line 67, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .control button {
+  height: 44px;
+}
+/* line 72, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .right {
+  float: right;
+  margin-right: 10px;
+}
+/* line 77, ../sass/_dashboard.scss */
+.dashboard .sub-header-header .searchbox {
+  margin-top: 3px;
+  position: absolute;
+  width: 250px;
+}
+/* line 87, ../sass/_dashboard.scss */
+.dashboard .more {
+  margin-top: 5px;
+  width: 80px;
+  float: right;
+  z-index: 1;
+}
+/* line 94, ../sass/_dashboard.scss */
+.dashboard .border-separator {
+  margin-bottom: -7px;
+}
+/* line 99, ../sass/_dashboard.scss */
+.dashboard .contents-custom-pane {
+  height: 700px;
+}
+/* line 103, ../sass/_dashboard.scss */
+.dashboard .contents {
+  display: inline-block;
+}
+/* line 109, ../sass/_dashboard.scss */
+.dashboard .contents .data-contents {
+  overflow-y: scroll;
+  -webkit-box-shadow: 1px 0px 4px 0px #777;
+  -moz-box-shadow: 1px 0px 4px 0px #777;
+  box-shadow: 1px 0px 4px 0px #777;
+  padding-bottom: 40px;
+  width: auto;
+  padding-right: 8px;
+  background-color: #ffffff;
+}
+/* line 120, ../sass/_dashboard.scss */
+.dashboard .contents .footer {
+  -webkit-box-shadow: 0px 0px 4px 0px #777;
+  -moz-box-shadow: 0px 0px 4px 0px #777;
+  box-shadow: 0px 0px 4px 0px #777;
+  text-align: center;
+  height: 50px;
+  width: auto;
+  margin-right: -5px;
+}
+/* line 130, ../sass/_dashboard.scss */
+.dashboard .contents .footer .info {
+  color: #000000 !important;
+  line-height: 3;
+}
+/* line 137, ../sass/_dashboard.scss */
+.dashboard .contents .content {
+  padding: 10px 20px 20px 30px;
+}
+/* line 140, ../sass/_dashboard.scss */
+.dashboard .contents .content .content-box {
+  padding: 7px;
+  border-left: 3px solid;
+}
+/* line 145, ../sass/_dashboard.scss */
+.dashboard .contents .content .divider {
+  padding: 3px 10px;
+  font-size: 14px;
+  width: 120px;
+  text-align: center;
+}
+/* line 152, ../sass/_dashboard.scss */
+.dashboard .contents .content .padding-top3 {
+  padding-top: 3px;
+}
+/* line 161, ../sass/_dashboard.scss */
+.dashboard .contents.content-right {
+  float: right;
+  border-bottom: 0;
+  padding: 0;
+}
+
+/* line 172, ../sass/_dashboard.scss */
+.duplicate-forms-view .scroll-content {
+  margin-top: 55px;
+}
+/* line 176, ../sass/_dashboard.scss */
+.duplicate-forms-view .list.list-inset.searchbox {
+  margin-top: 50px;
+}
+
+/* line 181, ../sass/_dashboard.scss */
+.platform-ios .popover .scroll-content {
+  margin: 8px;
+}
+
+/* line 4, ../sass/_forms.scss */
+.main-forms .controls {
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: -5px !important;
+  width: 53%;
+}
+/* line 12, ../sass/_forms.scss */
+.main-forms .controls .separator {
+  border-left: 1px solid #D3D2D2;
+}
+/* line 16, ../sass/_forms.scss */
+.main-forms .controls .header {
+  font-size: 12px;
+}
+/* line 22, ../sass/_forms.scss */
+.main-forms .controls .actions .btn.btn-sm {
+  margin-top: 0;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+/* line 30, ../sass/_forms.scss */
+.main-forms .controls button {
+  border: 0;
+}
+/* line 35, ../sass/_forms.scss */
+.main-forms .controls.detachform {
+  width: 60%;
+}
+/* line 39, ../sass/_forms.scss */
+.main-forms .sub-header {
+  display: inline-block;
+  height: 58px;
+}
+/* line 43, ../sass/_forms.scss */
+.main-forms .sub-header .title {
+  left: 0 !important;
+  width: 44%;
+}
+
+/* line 52, ../sass/_forms.scss */
+.form-types.popover {
+  height: 159px !important;
+}
+
+/* line 60, ../sass/_forms.scss */
+.form-types .scroll-content {
+  top: -8px;
+  bottom: -8px;
+}
+
+/* line 68, ../sass/_forms.scss */
+.raw-forms {
+  top: 100px;
+  position: absolute;
+}
+/* line 73, ../sass/_forms.scss */
+.raw-forms .item {
+  border-width: 0;
+}
+/* line 79, ../sass/_forms.scss */
+.raw-forms .content-form {
+  padding: 30px;
+}
+/* line 83, ../sass/_forms.scss */
+.raw-forms .content-form .col {
+  padding-left: 5px !important;
+}
+/* line 87, ../sass/_forms.scss */
+.raw-forms .content-form .col-col {
+  padding-left: 10px !important;
+}
+/* line 91, ../sass/_forms.scss */
+.raw-forms .content-form .col-col-col {
+  padding-left: 15px !important;
+}
+/* line 95, ../sass/_forms.scss */
+.raw-forms .content-form .btn {
+  border: 0 !important;
+}
+/* line 100, ../sass/_forms.scss */
+.raw-forms .content-form .other-lines {
+  margin-top: 10px;
+}
+/* line 103, ../sass/_forms.scss */
+.raw-forms .content-form .rpo-location {
+  font-size: 12px;
+  padding-right: 0;
+}
+/* line 109, ../sass/_forms.scss */
+.raw-forms .content-form .align-right {
+  float: right;
+  right: 0;
+}
+/* line 116, ../sass/_forms.scss */
+.raw-forms .content-form .header {
+  height: 25px;
+  text-align: center;
+}
+/* line 120, ../sass/_forms.scss */
+.raw-forms .content-form .header span {
+  line-height: 1.5;
+}
+/* line 126, ../sass/_forms.scss */
+.raw-forms .content-form .row-col-custom {
+  padding: 0 !important;
+  margin: 0;
+}
+/* line 131, ../sass/_forms.scss */
+.raw-forms .content-form .list-item-padding {
+  padding-top: 0;
+  padding-bottom: 6px;
+}
+/* line 136, ../sass/_forms.scss */
+.raw-forms .content-form .item-input-text {
+  margin-top: -7px;
+}
+
+/* line 147, ../sass/_forms.scss */
+.pre-filled-forms {
+  padding: 0 30px;
+}
+
+/* line 151, ../sass/_forms.scss */
+.pre-filled-forms .row {
+  margin: 0px;
+}
+
+/* line 155, ../sass/_forms.scss */
+.tab-item {
+  border-right: 1px solid #D3D2D2;
+  background-color: #eee;
+}
+
+/* line 162, ../sass/_forms.scss */
+.forms-validator .list {
+  margin-bottom: 0;
+}
+/* line 165, ../sass/_forms.scss */
+.forms-validator .submit-action {
+  margin-top: 20px;
+  text-align: center;
+}
+/* line 170, ../sass/_forms.scss */
+.forms-validator i {
+  padding: 10px;
+}
+
+/* line 175, ../sass/_forms.scss */
+.content-form .row.background-content {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px 30px;
+}
+
+/* line 181, ../sass/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 185, ../sass/_forms.scss */
+.content-form .row + .row {
+  margin-top: 0;
+}
+
+/* line 1, ../sass/_time.scss */
+.time {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: none;
+  margin-bottom: none;
+}
+/* line 8, ../sass/_time.scss */
+.time .col-time {
+  float: left;
+}
+/* line 12, ../sass/_time.scss */
+.time .col-time.label {
+  height: 34px;
+  line-height: 1.9;
+  font-size: 15px;
+  color: #000000;
+  font-style: italic;
+}
+
+/* line 3, ../sass/_stats.scss */
+.stats ion-content {
+  margin-top: 55px !important;
+  padding-top: 50px;
+}
+/* line 8, ../sass/_stats.scss */
+.stats .controls {
+  float: right;
+  margin-right: 5px;
+  margin-top: 5px !important;
+}
+/* line 13, ../sass/_stats.scss */
+.stats .controls button {
+  border: 0;
+  z-index: 1;
+}
+/* line 19, ../sass/_stats.scss */
+.stats .sub-header {
+  display: inline-block;
+}
+/* line 22, ../sass/_stats.scss */
+.stats .sub-header .title {
+  left: 0 !important;
+}
+/* line 27, ../sass/_stats.scss */
+.stats .graph {
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.alizarin_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .alizarin_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 0;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.amethyst_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -32px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .amethyst_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -32px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.asbestos_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -64px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .asbestos_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -64px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.bigbrush_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -96px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .bigbrush_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -96px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.black_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -128px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .black_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -128px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.blue_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -160px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .blue_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -160px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.bucket_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -192px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .bucket_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -192px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.clouds_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -224px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .clouds_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -224px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.cyan_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -256px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .cyan_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -256px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.emerald_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -288px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .emerald_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -288px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.eraser_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -320px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .eraser_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -320px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.green_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -352px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .green_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -352px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.mediumbrush_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -384px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .mediumbrush_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -384px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.orange_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -416px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .orange_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -416px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.pen_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -448px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .pen_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -448px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.pencil_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -480px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .pencil_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -480px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.peterriver_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -512px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .peterriver_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -512px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.pomegrante_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -544px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .pomegrante_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -544px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.red_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -576px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .red_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -576px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.silver_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -608px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .silver_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -608px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.smallbrush_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -640px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .smallbrush_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -640px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.stick_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -672px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .stick_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -672px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.sunflower_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -704px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .sunflower_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -704px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.torquoise_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -736px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .torquoise_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -736px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.wetasphalt_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -768px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .wetasphalt_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -768px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 6, ../sass/_si-diagram.scss */
+.yellow_icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('app/app/images/si-diagram1x-s485a2f240d.png');
+  background-position: 0 -800px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 45, ../sass/util/_retina-sprites.scss */
+  .yellow_icon {
+    background-image: url('app/app/images/si-diagram2x-sff00fd18d7.png');
+    background-position: 0 -800px;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    -webkit-background-size: 32px auto;
+    background-size: 32px auto;
+  }
+}
+
+/* line 12, ../sass/_si-diagram.scss */
+.si-diagram {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+/* line 20, ../sass/_si-diagram.scss */
+.si-diagram dropdown {
+  width: 120px;
+}
+/* line 25, ../sass/_si-diagram.scss */
+.si-diagram .canvas-container {
+  margin-left: 20px;
+  overflow: hidden;
+}
+/* line 30, ../sass/_si-diagram.scss */
+.si-diagram .si-diagram-sketching-mode {
+  width: 100%;
+}
+/* line 40, ../sass/_si-diagram.scss */
+.si-diagram .labelling {
+  padding-left: 7px;
+  width: 50px;
+}
+/* line 45, ../sass/_si-diagram.scss */
+.si-diagram #si-diagram-sketch:hover > canvas {
+  -moz-transform: scale(3, 3);
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3);
+}
+/* line 51, ../sass/_si-diagram.scss */
+.si-diagram input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 1;
+  filter: alpha(opacity=0);
+}

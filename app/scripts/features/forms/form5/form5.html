@@ -1,0 +1,386 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+    <div class="content-form">
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        SWO
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65 margin-top5">
+                <input   type="text" placeholder="SWO" class="background-transparent"  ng-model="ctrlForm5.form.swo"
+                         post-filled-form src-key="swo" src-value="ctrlForm5.form.swo" src-form="Form5">
+                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.swo"></div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 header-title margin-top10">
+                Work Train Details
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Depart From
+                    </div>
+                    <div class="col col-35">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Depart From" ng-model="ctrlForm5.form.work_train_departure_from"
+                        post-filled-form src-key="work_train_departure_from" src-value="ctrlForm5.form.work_train_departure_from" src-form="Form5">
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.work_train_departure_from"></div>
+                    </div>
+                    <div class="col col-20 text-bold">
+                        Depart Hours
+                    </div>
+                    <div class="col col-30 margin-top_5">
+                        <div custom-time time="ctrlForm5.form.work_train_departure_hr" key="work_train_departure_hr" form="Form5"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Finish At
+                    </div>
+                    <div class="col col-35">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Finish At" ng-model="ctrlForm5.form.work_train_finish_at"
+                               post-filled-form src-key="work_train_finish_at" src-value="ctrlForm5.form.work_train_finish_at" src-form="Form5">
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.work_train_finish_at"></div>
+                    </div>
+                    <div class="col col-20 text-bold">
+                        Finish Hours
+                    </div>
+                    <div class="col col-30 margin-top_5">
+                        <div custom-time time="ctrlForm5.form.work_train_finish_at_hr" key="work_train_finish_at_hr" form="Form5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 margin-top10 header-title">
+                Additional Information Required
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-35">
+                        Is any Setting Back required:
+                    </div>
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm5.form.additional_info_yes=!ctrlForm5.form.additional_info_yes; ctrlForm5.form.additional_info_no=false;"
+                           post-filled-form src-key="additional_info_yes" src-value="ctrlForm5.form.additional_info_yes" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.additional_info_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.additional_info_yes}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top3">
+                        Yes
+                    </div>
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm5.form.additional_info_no=!ctrlForm5.form.additional_info_no; ctrlForm5.form.additional_info_yes=false;"
+                           post-filled-form src-key="additional_info_no" src-value="ctrlForm5.form.additional_info_no" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.additional_info_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.additional_info_no}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top3">
+                        No
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm5.form.additional_info_yes">
+                    <div class="col col-40 text-bold">
+                        List Locations
+                    </div>
+                    <div class="col">
+                        <input type="text" class="item-input-text background-transparent" ng-model="ctrlForm5.form.additional_info_list_location" placeholder="List Locations"
+                               post-filled-form src-key="additional_info_list_location" src-value="ctrlForm5.form.additional_info_list_location" src-form="Form5">
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.additional_info_list_location"></div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 margin-top10">
+                <span class="header-title">EP Van required</span> for working/travelling in tunnels
+                may also be required for remote location/restricted road access/shelter
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.ep_van_required=!ctrlForm5.form.ep_van_required;"
+                           post-filled-form src-key="ep_van_required" src-value="ctrlForm5.form.ep_van_required" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.ep_van_required,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.ep_van_required}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top15">
+                        Yes
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 ">
+                <div class="row">
+                    <div class="col margin-top10 header-title">
+                        If conveying Concrete Sleeper(ECS) Wagons
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col margin-top70">
+                        EWR Wagons
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-35 margin-top10">
+                        Bridging Beams between Wagons
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.bridging_beams_wagons=!ctrlForm5.form.bridging_beams_wagons;ctrlForm5.form.bridging_beams_storage_position=false;"
+                           post-filled-form src-key="bridging_beams_wagons" src-value="ctrlForm5.form.bridging_beams_wagons" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.bridging_beams_wagons,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.bridging_beams_wagons}"></i></a>
+
+                    </div>
+                    <div class="col col margin-top10">
+                        Max Speed 55km/h
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-35 margin-top10">
+                        Bridging Beams in Storage position
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.bridging_beams_storage_position=!ctrlForm5.form.bridging_beams_storage_position;ctrlForm5.form.bridging_beams_wagons=false;"
+                           post-filled-form src-key="bridging_beams_storage_position" src-value="ctrlForm5.form.bridging_beams_storage_position" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.bridging_beams_storage_position,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.bridging_beams_storage_position}"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-35 margin-top10">
+                        Arranged Radios from Communications
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.ewr_wagons=!ctrlForm5.form.ewr_wagons;"
+                           post-filled-form src-key="ewr_wagons" src-value="ctrlForm5.form.ewr_wagons" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.ewr_wagons,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.ewr_wagons}"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 margin-top15 header-title">
+                Consists:
+            </div>
+
+            <div class="col col-65 margin-top10">
+                <input type="text" ng-model="ctrlForm5.form.consists" class="background-transparent" placeholder="Consists"
+                       post-filled-form src-key="consists" src-value="ctrlForm5.form.consists" src-form="Form5">
+                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.consists"></div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 margin-top15 header-title">
+                What Work is Being Carried Out:
+            </div>
+
+            <div class="col col-65 margin-top10">
+                <div class="col">
+                    <textarea  class="background-transparent" placeholder="Work being carried out" ng-model="ctrlForm5.form.work_carried_out" rows="10"
+                               post-filled-form src-key="work_carried_out" src-value="ctrlForm5.form.work_carried_out" src-form="Form5">
+                    </textarea>
+                    <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.work_carried_out"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-20 text-bold margin-top10">
+                Working in Multi Line areas
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col col-5">
+
+                        <a ng-click="ctrlForm5.form.multiline_workarea=!ctrlForm5.form.multiline_workarea;"
+                           post-filled-form   src-key="multiline_workarea" src-value="ctrlForm5.form.multiline_workarea" src-form="Form5" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.multiline_workarea,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.multiline_workarea}"></i></a>
+
+                    </div>
+                    <div class="col margin-top3 margin-left15">
+                        Yes
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row" ng-if="ctrlForm5.form.multiline_workarea">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm5.form.multiline_workarea_both_up_down=!ctrlForm5.form.multiline_workarea_both_up_down;
+                        ctrlForm5.form.multiline_workarea_up_main=false;
+                        ctrlForm5.form.multiline_workarea_down_main=false;
+                        ctrlForm5.form.multiline_workarea_other_lines=false;"
+                                   post-filled-form   src-key="multiline_workarea_both_up_down" src-value="ctrlForm5.form.multiline_workarea_both_up_down" src-form="Form5" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.multiline_workarea_both_up_down,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.multiline_workarea_both_up_down}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Both Up and Down main
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm5.form.multiline_workarea_up_main=!ctrlForm5.form.multiline_workarea_up_main;
+                        ctrlForm5.form.multiline_workarea_both_up_down=false;
+                        ctrlForm5.form.multiline_workarea_down_main=false;
+                        ctrlForm5.form.multiline_workarea_other_lines=false;"
+                                   post-filled-form   src-key="multiline_workarea_up_main" src-value="ctrlForm5.form.multiline_workarea_up_main" src-form="Form5" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.multiline_workarea_up_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.multiline_workarea_up_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Up Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-5 ">
+
+                                <a ng-click="ctrlForm5.form.multiline_workarea_down_main=!ctrlForm5.form.multiline_workarea_down_main;
+                        ctrlForm5.form.multiline_workarea_both_up_down=false;
+                        ctrlForm5.form.multiline_workarea_up_main=false;
+                        ctrlForm5.form.multiline_workarea_other_lines=false;"
+                                   post-filled-form   src-key="multiline_workarea_down_main" src-value="ctrlForm5.form.multiline_workarea_down_main" src-form="Form5" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.multiline_workarea_down_main,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.multiline_workarea_down_main}"></i></a>
+
+                            </div>
+                            <div class="col col-75 margin-top3">
+                                Down Main only
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col  col-5">
+
+                                <a ng-click="ctrlForm5.form.multiline_workarea_other_lines=!ctrlForm5.form.multiline_workarea_other_lines;
+                        ctrlForm5.form.multiline_workarea_both_up_down=false;
+                        ctrlForm5.form.multiline_workarea_down_main=false;
+                        ctrlForm5.form.multiline_workarea_up_main=false;"
+                                   post-filled-form   src-key="multiline_workarea_other_lines" src-value="ctrlForm5.form.multiline_workarea_other_lines" src-form="Form5" >
+                                    <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.multiline_workarea_other_lines,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.multiline_workarea_other_lines}"></i></a>
+
+                            </div>
+                            <div class="col col-50 margin-top3 margin-left_5">
+                                Other Lines(Specify)
+                            </div>
+                            <div class="col margin-top5" ng-if="ctrlForm5.form.multiline_workarea_other_lines">
+                                <input  class="background-transparent margin-top_10" type="text" placeholder="Other Lines"  ng-model="ctrlForm5.form.multiline_workarea_specify_other_lines"
+                                        post-filled-form src-key="multiline_workarea_specify_other_lines" src-value="ctrlForm5.form.multiline_workarea_specify_other_lines" src-form="Form5" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.multiline_workarea_specify_other_lines"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 margin-top10 header-title">
+                Do You Need any Train Services Cancelled or Rescheduled ?
+            </div>
+
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.train_service_cancelled_resheduled_yes=!ctrlForm5.form.train_service_cancelled_resheduled_yes;ctrlForm5.form.train_service_cancelled_resheduled_no=false;"
+                           post-filled-form src-key="train_service_cancelled_resheduled_yes" src-value="ctrlForm5.form.train_service_cancelled_resheduled_yes" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.train_service_cancelled_resheduled_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.train_service_cancelled_resheduled_yes}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top10">
+                        Yes
+                    </div>
+                    <div class="col col-5 margin-top10">
+                        <a ng-click="ctrlForm5.form.train_service_cancelled_resheduled_no=!ctrlForm5.form.train_service_cancelled_resheduled_no;ctrlForm5.form.train_service_cancelled_resheduled_yes=false;"
+                           post-filled-form src-key="train_service_cancelled_resheduled_no" src-value="ctrlForm5.form.train_service_cancelled_resheduled_no" src-form="Form5">
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm5.form.train_service_cancelled_resheduled_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm5.form.train_service_cancelled_resheduled_no}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top10">
+                        No
+                    </div>
+                </div>
+
+                <div class="row" ng-if="ctrlForm5.form.train_service_cancelled_resheduled_yes">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                List Services To Be Considered From Cancellation/Rescheduling
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <textarea  class="background-transparent" placeholder="List Services To Be Considered Fro Cancellation/Rescheduling" ng-model="ctrlForm5.form.train_service_cancelled_resheduled" rows="10"
+                                           post-filled-form src-key="train_service_cancelled_resheduled" src-value="ctrlForm5.form.train_service_cancelled_resheduled" src-form="Form5">
+                                </textarea>
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm5.form.train_service_cancelled_resheduled"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Person in Charge and Contact Number
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-25 margin-top10 text-bold">
+                        Person Name
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Person Name"  ng-model="ctrlForm5.form.person_in_charge_name"
+                                post-filled-form src-key="person_in_charge_name" src-value="ctrlForm5.form.person_in_charge_name" src-form="Form5" >
+                        <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm5.form.person_in_charge_name"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-25 margin-top10 text-bold">
+                        Contact Number
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Contact Number"  ng-model="ctrlForm5.form.person_in_charge_contact_no"
+                                post-filled-form src-key="person_in_charge_contact_no" src-value="ctrlForm5.form.person_in_charge_contact_no" src-form="Form5" >
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

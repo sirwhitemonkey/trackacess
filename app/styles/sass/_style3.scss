@@ -1,0 +1,299 @@
+.background-custom-1 {
+  background-color: $red02 !important;
+}
+
+.background-custom-2 {
+  background-color:  $grey02 !important;
+}
+
+.background-custom-3 {
+  background-color:  $grey01 !important;
+}
+
+.background-custom-4 {
+  background-color:  $white02 !important;
+}
+
+.background-custom-5 {
+  background-color: $blue02 !important;
+}
+
+.background-custom-6 {
+  background-color: $yellow02 !important;
+}
+
+.background-custom-7 {
+  background-color: $orange01 !important;
+}
+
+.background-custom-8 {
+  background-color: $pink01 !important;
+}
+
+.background-custom-9 {
+  background-color: $grey05 !important;
+}
+
+.background-custom-10 {
+  background-color: $blue01 !important;
+}
+
+.background-custom-11 {
+  background-color: $grey09 !important;
+}
+
+
+
+.title {
+  color: $white01 !important;
+}
+
+.more-options {
+  color: $white02 !important;
+}
+
+.dashboard {
+
+  .sub-header {
+    .title {
+      color: $black !important;
+    }
+  }
+
+  .sub-header-header  {
+    .right {
+      color: $red02 !important;
+    }
+
+    .right-border-bottom, .col-65 {
+      border-bottom:2px solid $red02;
+    }
+  }
+
+
+  .contents-custom-pane {
+    background-color: $white02;
+  }
+
+  .contents {
+
+    .content {
+
+
+      .divider {
+        color: $white01;
+      }
+
+      .content-box {
+        border-bottom-color: $grey01;
+
+        .header {
+          color: $black;
+        }
+
+        .details {
+          color: $grey04;
+        }
+      }
+
+      .draft {
+
+        .divider {
+          background-color: $red02;
+        }
+
+        .content-box.background-border-left {
+          border-left-color: $red02;
+        }
+      }
+
+      .favourites {
+
+        .divider {
+          background-color: $green02;
+        }
+
+        .content-box.background-border-left {
+          border-left-color: $green02;
+        }
+
+      }
+
+      .completed {
+
+        .divider {
+          background-color: $yellow01;
+        }
+
+        .content-box.background-border-left {
+          border-left-color: $yellow01;
+        }
+
+      }
+
+    }
+
+  }
+
+  .contents.content-right {
+    background-color: $grey02;
+  }
+
+  .contents.content-left {
+    -webkit-box-shadow: 1px 0px 4px 0px $grey03;
+    -moz-box-shadow: 1px 0px 4px 0px $grey03;
+    box-shadow: 1px 0px 4px 0px $grey03;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    background-color: $red02;
+  }
+}
+
+
+.accordion-contents {
+  .panel-heading {
+    background-color: $red02;
+  }
+
+  .panel-title {
+    color: $white02;
+  }
+
+}
+
+.platform-ios .popover-arrow:after {
+  background-color: $white02;
+}
+
+.more-options {
+  .item.popover-item {
+    color: $black;
+  }
+}
+
+.btn {
+  background-color: $red02;
+}
+
+/*.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.active,*/
+.open .dropdown-toggle.btn-primary {
+  background-color: $red01;
+}
+
+
+.dashboard-home {
+  border-color: $white02;
+
+}
+
+.stats {
+  .title {
+    color: $black !important;
+  }
+
+}
+
+.main-forms {
+  .title {
+    color:$black !important;
+  }
+
+  .tab-item-active {
+    margin-top: -1px;
+    border-top: 4px solid $red02;
+    color: $red02 !important;
+    font-weight: bold;
+  }
+
+  .tab-nav.tabs {
+    background-color: $grey01 !important ;
+    border: 0 !important;
+  }
+
+}
+
+
+.raw-forms {
+
+  background-color: $grey02;
+
+  .content-form {
+
+    .header {
+      background-color: $red02;
+      color: $white01;
+
+    }
+
+
+    label {
+      color: $black;
+    }
+
+  }
+}
+
+.item-selected {
+  background-color: $grey02 !important;
+}
+
+.header-title {
+  color: $red02;
+  font-weight: bold;
+}
+
+
+.sub-header {
+  .icon-form {
+    color:$red02;
+  }
+}
+
+
+.background-content {
+  -webkit-box-shadow: 0px 0px 0px 0px $grey03;
+  -moz-box-shadow: 0px 0px 0px 0px $grey03;
+  box-shadow: 0px 0px 0px 0px $grey03;
+  background-color: $grey09 !important;
+}
+
+
+._draft {
+  color: $red02;
+  font-weight: bold;
+}
+
+._favourites {
+  color: $green02;
+  font-weight: bold;
+}
+
+._completed {
+  color:$yellow01;
+  font-weight: bold;
+}
+
+.check-mark {
+  color:$green02;
+}
+
+.uncheck-mark {
+  color:$grey03;
+}
+
+.icon-action {
+  color: $red02 !important;
+}
+
+.content-form .row.background-content:nth-child(even){
+  background-color: #f9f9fa !important;
+}
+.content-form .row.background-content:nth-child(odd){
+  background-color: #f7e3e6 !important;
+}

@@ -1,0 +1,64 @@
+<ion-scroll>
+    <div class="pre-filled-forms" ng-controller="CtrlPreFilledForm">
+        <div resize-contents sync="true" class="">
+            <div class="row">
+                <div class="col header-title">
+                    Summary
+                </div>
+            </div>
+            <div class="row" ng-if="ctrlPreFilledForm.graph_data !== undefined">
+                <div class="col">
+                    <chart data="ctrlPreFilledForm.graph_data"></chart>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col header-title">
+                    Pre-Filled Forms
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col ">
+                    <div class="list">
+                        <label class="item item-input item-floating-label padding10">
+                            <span class="input-label">Person Name</span>
+                            <input type="text" placeholder="Person Name" ng-model="ctrlPreFilledForm.form.person_name" pre-filled-form src-key="person_name" src-value="ctrlPreFilledForm.form.person_name">
+                            <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlPreFilledForm.form.person_name"></div>
+                        </label>
+
+                        <label class="item item-input item-floating-label padding10">
+                            <span class="input-label">Person Contact No.</span>
+                            <input type="text" placeholder="Person Contact No." ng-model="ctrlPreFilledForm.form.person_contact_no" pre-filled-form src-key="person_contact_no" src-value="ctrlPreFilledForm.form.person_contact_no">
+                        </label>
+
+                        <label class="item item-input item-floating-label padding10">
+                            <span class="input-label">Officer Name</span>
+                            <input type="text" placeholder="Officer Name" ng-model="ctrlPreFilledForm.form.officer_name" pre-filled-form src-key="officer_name" src-value="ctrlPreFilledForm.form.officer_name">
+                            <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlPreFilledForm.form.officer_name"></div>
+
+                        </label>
+
+                        <label class="item item-input item-floating-label padding10">
+                            <span class="input-label">Officer Contact No</span>
+                            <input type="text" placeholder="Officer Contact No"  ng-model="ctrlPreFilledForm.form.officer_contact_no" pre-filled-form src-key="officer_contact_no" src-value="ctrlPreFilledForm.form.officer_contact_no">
+                        </label>
+
+                        <label class="item item-input item-floating-label padding10">
+                            <span class="input-label">Officer Duty Hours</span>
+                            <input type="text" placeholder="Officer Duty Hours" ng-model="ctrlPreFilledForm.form.officer_duty_hr" pre-filled-form src-key="officer_duty_hr" src-value="ctrlPreFilledForm.form.officer_duty_hr">
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+</ion-scroll>

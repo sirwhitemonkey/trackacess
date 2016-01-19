@@ -1,0 +1,681 @@
+<div class="raw-forms" resize-contents sync="true" margin="50">
+
+<div class="content-form">
+
+
+
+        <div class="row background-content">
+         <div class="col col-35">
+        <div class="row">
+            <div class="col">
+                <span class="header-title">Location(s) At or Between</span> <br/>
+            </div>
+        </div>
+    </div>
+    <div class="col col-65">
+        <div class="row">
+            <div class="col">
+                <div class="list">
+                    <label class="item item-input item-select background-transparent ">
+                        <div class="input-label margin-left_15 text-bold">
+                            Line
+                        </div>
+                        <select  class="background-transparent" ng-model="ctrlForm3.form.f3_location_between_at_line" ng-options="o as o.name for o in ctrlForm3.lines track by o.id"
+                                 post-filled-form  src-key="f3_location_between_at_line" src-value="ctrlForm3.form.f3_location_between_at_line" src-form="Form3" >
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <span class="text-bold">From</span>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Station
+                    </div>
+                    <div class="col">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Station" ng-model="ctrlForm3.form.f3_location_between_at_from_station"
+                               post-filled-form  src-key="f3_location_between_at_from_station" src-value="ctrlForm3.form.f3_location_between_at_from_station" src-form="Form3" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.f3_location_between_at_from_station"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Signal
+                    </div>
+                    <div class="col">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Signal" ng-model="ctrlForm3.form.f3_location_between_at_from_signals"
+                               post-filled-form  src-key="f3_location_between_at_from_signals" src-value="ctrlForm3.form.f3_location_between_at_from_signals" src-form="Form3" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.f3_location_between_at_from_signals"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Metres
+                    </div>
+                    <div class="col">
+                        <input type="number" step="any" min="0" class="item-input-text background-transparent" placeholder="Metres" ng-model="ctrlForm3.form.f3_location_between_at_from_metres"
+                               post-filled-form src-key="f3_location_between_at_from_metres" src-value="ctrlForm3.form.f3_location_between_at_from_metres" src-form="Form3" >
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Points
+                    </div>
+                    <div class="col">
+                        <input type="number" step="any" min="0" class="item-input-text background-transparent" placeholder="Points" ng-model="ctrlForm3.form.f3_location_between_at_from_points"
+                               post-filled-form src-key="f3_location_between_at_from_points" src-value="ctrlForm3.form.f3_location_between_at_from_points" src-form="Form3" >
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+                <span class="text-bold">To</span>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Station
+                    </div>
+                    <div class="col">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Station" ng-model="ctrlForm3.form.f3_location_between_at_to_station"
+                               post-filled-form   src-key="f3_location_between_at_to_station" src-value="ctrlForm3.form.f3_location_between_at_to_station" src-form="Form3" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.f3_location_between_at_to_station"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Signal
+                    </div>
+                    <div class="col">
+                        <input type="text" class="item-input-text background-transparent" placeholder="Signal" ng-model="ctrlForm3.form.f3_location_between_at_to_signals"
+                               post-filled-form  src-key="f3_location_between_at_to_signals" src-value="ctrlForm3.form.f3_location_between_at_to_signals" src-form="Form3" >
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.f3_location_between_at_to_signals"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Metres
+                    </div>
+                    <div class="col">
+                        <input type="number" step="any" min="0" class="item-input-text background-transparent" placeholder="Metres" ng-model="ctrlForm3.form.f3_location_between_at_to_metres"
+                               post-filled-form src-key="f3_location_between_at_to_metres" src-value="ctrlForm3.form.f3_location_between_at_to_metres" src-form="Form3" >
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 text-bold">
+                        Points
+                    </div>
+                    <div class="col">
+                        <input type="number" step="any" min="0" class="item-input-text background-transparent" placeholder="Points" ng-model="ctrlForm3.form.f3_location_between_at_to_points"
+                               post-filled-form src-key="f3_location_between_at_to_points" src-value="ctrlForm3.form.f3_location_between_at_to_points" src-form="Form3" >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col">
+                        <span class="header-title">Re-railing Operations</span> <br/>
+                        (required for re-railing and rail replacement)
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row" ng-if="ctrlForm3.form.re_railing">
+                            <div class="col col-5" >
+                                <i class="ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                        </div>
+                        <div class="row" ng-if="!ctrlForm3.form.re_railing">
+                            <div class="col col-5">
+                                <i class="{'ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm3.form.re_railing">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                Between
+                            </div>
+                            <div class="col">
+                                <input  class="item-input-text background-transparent" type="text" placeholder="Between"  ng-model="ctrlForm3.form.re_railing_between"
+                                        post-filled-form src-key="re_railing_between" src-value="ctrlForm3.form.re_railing_between" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.re_railing_between"></div>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                And
+                            </div>
+                            <div class="col">
+                                <input  class="item-input-text background-transparent" type="text" placeholder="And"  ng-model="ctrlForm3.form.re_railing_and"
+                                        post-filled-form src-key="re_railing_and" src-value="ctrlForm3.form.re_railing_and" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.re_railing_and"></div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                Detail Rusty instructions to be included on Bulletin
+                                Specify sections applicable
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                Between
+                            </div>
+                            <div class="col">
+                                <input  class="item-input-text background-transparent" type="text" placeholder="Between"  ng-model="ctrlForm3.form.re_railing_detail_rust_rail_between"
+                                        post-filled-form src-key="re_railing_detail_rust_rail_between" src-value="ctrlForm3.form.re_railing_detail_rust_rail_between" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.re_railing_detail_rust_rail_between"></div>
+
+
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col col-15 text-bold ">
+                                And
+                            </div>
+                            <div class="col">
+                                <input  class="item-input-text background-transparent" type="text" placeholder="And"  ng-model="ctrlForm3.form.re_railing_detail_rust_rail_and"
+                                        post-filled-form src-key="re_railing_detail_rust_rail_and" src-value="ctrlForm3.form.re_railing_detail_rust_rail_and" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.re_railing_detail_rust_rail_and"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 border">
+                <div class="row">
+                    <div class="col header-title">
+                        Level Crossing Alarms On Manual Control ?
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row" ng-if="ctrlForm3.form.lca_manual_control">
+                            <div class="col col-5" >
+                                <i class="ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                        </div>
+                        <div class="row" ng-if="!ctrlForm3.form.lca_manual_control">
+                            <div class="col col-5">
+                                <i class="{'ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm3.form.lca_manual_control">
+                    <div class="col">
+                        <div class="row" >
+                            <div class="col margin-top5 text-bold">
+                                Name
+                            </div>
+                            <div class="col margin-top5 text-bold">
+                                Metrage
+                            </div>
+                            <div class="col margin-top5">
+                                <i class="ion ion-ios-plus icon-action align-right" ng-click="ctrlForm3.newLCAManualControl()"></i>
+                            </div>
+                        </div>
+                        <div class="row" ng-repeat="lca_manual_control in ctrlForm3.form.lca_manual_controls" >
+                            <div class="col col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="text"  placeholder="Name" class="background-transparent" ng-model="lca_manual_control.level_crossing"
+                                               post-filled-form src-key="lca_manual_controls" src-value="ctrlForm3.form.lca_manual_controls" src-form="Form3" >
+                                        <div ng-hide="true" capitalize first-character="true" src-item="lca_manual_control.level_crossing"></div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="number" min="0" placeholder="Metrage" class="background-transparent" ng-model="lca_manual_control.metrage"
+                                               post-filled-form src-key="lca_manual_controls" src-value="ctrlForm3.form.lca_manual_controls" src-form="Form3" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  margin-top10">
+                                <i class="ion ion-ios-minus icon-action align-right" ng-click="ctrlForm3.removeLCAManualControl($index)"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                Hours of Manual Operations
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                From
+                            </div>
+                            <div class="col col-30">
+                                <div custom-time time="ctrlForm3.form.lca_manual_control_from_hr" key="lca_manual_control_from_hr" form="Form3"></div>
+                            </div>
+                            <div class="col col-15 text-align-right margin-top5 text-bold">
+                                To
+                            </div>
+                            <div class="col col-30">
+                                <div custom-time time="ctrlForm3.form.lca_manual_control_to_hr" key="lca_manual_control_to_hr" form="Form3"></div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col col-25">
+                                Speed Boards required for disconnections
+                            </div>
+                            <div class="row">
+                                <div class="col col-15">
+                                    <a ng-click="ctrlForm3.form.lca_manual_control_speed_boards_yes=!ctrlForm3.form.lca_manual_control_speed_boards_yes; ctrlForm3.form.lca_manual_control_speed_boards_no=false;"
+                                       post-filled-form src-key="lca_manual_control_speed_boards_yes" src-value="ctrlForm3.form.lca_manual_control_speed_boards_yes" src-form="Form3" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.lca_manual_control_speed_boards_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.lca_manual_control_speed_boards_yes}"></i></a>
+
+                                </div>
+                                <div class="col col-15 margin-top3">
+                                    Yes
+                                </div>
+                                <div class="col col-15">
+                                    <a ng-click="ctrlForm3.form.lca_manual_control_speed_boards_no=!ctrlForm3.form.lca_manual_control_speed_boards_no; ctrlForm3.form.lca_manual_control_speed_boards_yes=false;"
+                                       post-filled-form src-key="lca_manual_control_speed_boards_no" src-value="ctrlForm3.form.lca_manual_control_speed_boards_no" src-form="Form3" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.lca_manual_control_speed_boards_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.lca_manual_control_speed_boards_no}"></i></a>
+
+                                </div>
+                                <div class="col col-15 margin-top3">
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForm3.form.lca_manual_control_speed_boards_no">
+                            <div class="col">
+                                <textarea class="background-transparent" rows="10" placeholder="Reasons if No, Specify the reasons" ng-model="ctrlForm3.form.lca_manual_control_speed_boards_reason"
+                                          post-filled-form src-key="lca_manual_control_speed_boards_reason" src-value="ctrlForm3.form.lca_manual_control_speed_boards_reason" src-form="Form3" >
+                                </textarea>
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.lca_manual_control_speed_boards_reason"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35 border">
+                <div class="row">
+                    <div class="col header-title">
+                        Level Crossing Alarms Disconnected ?
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row" ng-if="ctrlForm3.form.lca_disconnected">
+                            <div class="col col-5" >
+                                <i class="ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                        </div>
+                        <div class="row" ng-if="!ctrlForm3.form.lca_disconnected">
+                            <div class="col col-5">
+                                <i class="{'ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm3.form.lca_disconnected">
+                    <div class="col">
+                        <div class="row" >
+                            <div class="col margin-top5 text-bold">
+                                Name
+                            </div>
+                            <div class="col margin-top5 text-bold">
+                                Metrage
+                            </div>
+                            <div class="col margin-top5">
+                                <i class="ion ion-ios-plus icon-action align-right" ng-click="ctrlForm3.newLCADisconnected()"></i>
+                            </div>
+                        </div>
+                        <div class="row" ng-repeat="disconnected in ctrlForm3.form.lca_disconnections" >
+                            <div class="col col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="text"  placeholder="Name" class="background-transparent" ng-model="disconnected.level_crossing"
+                                               post-filled-form src-key="lca_disconnections" src-value="ctrlForm3.form.lca_disconnections" src-form="Form3" >
+                                        <div ng-hide="true" capitalize first-character="true" src-item="disconnected.level_crossing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col">
+                                <div class="row">
+                                    <div class="col margin-top_5">
+                                        <input type="number" min="0" placeholder="Metrage" class="background-transparent" ng-model="disconnected.metrage"
+                                               post-filled-form src-key="lca_disconnections" src-value="ctrlForm3.form.lca_disconnections" src-form="Form3" >
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col  margin-top10">
+                                <i class="ion ion-ios-minus icon-action align-right" ng-click="ctrlForm3.removeLCADisconnected($index)"></i>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col col-25">
+                                Speed Boards required for disconnections
+                            </div>
+                            <div class="row">
+                                <div class="col col-15">
+                                    <a ng-click="ctrlForm3.form.lca_disconnected_speed_boards_yes=!ctrlForm3.form.lca_disconnected_speed_boards_yes; ctrlForm3.form.lca_disconnected_speed_boards_no=false;"
+                                       post-filled-form src-key="lca_disconnected_speed_boards_yes" src-value="ctrlForm3.form.lca_disconnected_speed_boards_yes" src-form="Form3" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.lca_disconnected_speed_boards_yes,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.lca_disconnected_speed_boards_yes}"></i></a>
+
+                                </div>
+                                <div class="col col-15 margin-top3">
+                                    Yes
+                                </div>
+                                <div class="col col-15">
+                                    <a ng-click="ctrlForm3.form.lca_disconnected_speed_boards_no=!ctrlForm3.form.lca_disconnected_speed_boards_no; ctrlForm3.form.lca_disconnected_speed_boards_yes=false;"
+                                       post-filled-form src-key="lca_disconnected_speed_boards_no" src-value="ctrlForm3.form.lca_disconnected_speed_boards_no" src-form="Form3" >
+                                        <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.lca_disconnected_speed_boards_no,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.lca_disconnected_speed_boards_no}"></i></a>
+
+                                </div>
+                                <div class="col col-15 margin-top3">
+                                    No
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="ctrlForm3.form.lca_disconnected_speed_boards_no">
+                            <div class="col">
+                                <textarea class="background-transparent" rows="10" placeholder="Reasons if No, Specify the reasons" ng-model="ctrlForm3.form.lca_disconnected_speed_boards_reason"
+                                          post-filled-form src-key="lca_disconnected_speed_boards_reason" src-value="ctrlForm3.form.lca_disconnected_speed_boards_reason" src-form="Form3" >
+                                </textarea>
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.lca_disconnected_speed_boards_reason"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col">
+                        <span class="header-title">List of Signals Being Fixed At Stop:</span><br/>
+                        (For suspension of signalling on the Midland Line list arrival / Home signal at
+                        each end of suspended section which WILL be operative)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <textarea class="background-transparent" ng-model="ctrlForm3.form.list_signals_fixed_stop" rows="10" placeholder="List of Signals Being Fixed At Stop"
+                                  post-filled-form src-key="list_signals_fixed_stop" src-value="ctrlForm3.form.list_signals_fixed_stop" src-form="Form3" >
+                        </textarea>
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.list_signals_fixed_stop"></div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        List of Motor Points Being Disconnected/Signalling disarranged
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <textarea class="background-transparent" ng-model="ctrlForm3.form.list_motors_points_disconnected" rows="10" placeholder="List of Motor Points Being Disconnected/Signalling disarranged"
+                                  post-filled-form src-key="list_motors_points_disconnected" src-value="ctrlForm3.form.list_motors_points_disconnected" src-form="Form3" >
+                        </textarea>
+                        <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.list_motors_points_disconnected"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Testing of Signals / Motor Points
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm3.form.testing_signals_motor_points=!ctrlForm3.form.testing_signals_motor_points; "
+                           post-filled-form src-key="testing_signals_motor_points" src-value="ctrlForm3.form.testing_signals_motor_points" src-form="Form3" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.testing_signals_motor_points,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.testing_signals_motor_points}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top3">
+                        Yes
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm3.form.testing_signals_motor_points">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                Hours
+                            </div>
+                            <div class="col">
+                                <div custom-time time="ctrlForm3.form.testing_signals_motor_hr" key="testing_signals_motor_hr" form="Form3"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top10 text-bold">
+                                Date
+                            </div>
+                            <div class="col">
+                                <input type="date" class="background-transparent date-dotted-border" ng-model="ctrlForm3.form.testing_signals_motor_date"
+                                       post-filled-form src-key="testing_signals_motor_date" src-value="ctrlForm3.form.testing_signals_motor_date" src-form="Form3" >
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        3.3kV Signals power supply turned OFF ?
+                        <br/>Midland line and Wellington Metro Areas
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col">
+                        <div class="row" ng-if="ctrlForm3.form.kv_signals">
+                            <div class="col col-5" >
+                                <i class="ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                Yes
+                            </div>
+                        </div>
+                        <div class="row" ng-if="!ctrlForm3.form.kv_signals">
+                            <div class="col col-5">
+                                <i class="{'ion ion-ios-checkmark check-mark"></i>
+                            </div>
+                            <div class="col col-15 margin-top3">
+                                No
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" ng-if="ctrlForm3.form.kv_signals">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-15 text-bold">
+                                Between
+                            </div>
+                            <div class="col col-35">
+                                <input class="item-input-text background-transparent" type="text" placeholder="Between" ng-model="ctrlForm3.form.kv_signals_power_cutoff_between"
+                                       post-filled-form src-key="kv_signals_power_cutoff_between" src-value="ctrlForm3.form.kv_signals_power_cutoff_between" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.kv_signals_power_cutoff_between"></div>
+                            </div>
+                            <div class="col col-15 text-bold">
+                                And
+                            </div>
+                            <div class="col col-35">
+                                <input class="item-input-text background-transparent" type="text" placeholder="And" ng-model="ctrlForm3.form.kv_signals_power_cutoff_and"
+                                       post-filled-form src-key="kv_signals_power_cutoff_and" src-value="ctrlForm3.form.kv_signals_power_cutoff_and" src-form="Form3" >
+                                <div ng-hide="true" capitalize first-character="true" src-item="ctrlForm3.form.kv_signals_power_cutoff_and"></div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-15 margin-top5 text-bold">
+                                From
+                            </div>
+                            <div class="col col-30">
+                                <div custom-time time="ctrlForm3.form.kv_signals_power_cutoff_from_hr" key="kv_signals_power_cutoff_from_hr" form="Form3"></div>
+                            </div>
+                            <div class="col col-15 text-align-right margin-top5 text-bold">
+                                To
+                            </div>
+                            <div class="col col-30">
+                                <div custom-time time="ctrlForm3.form.kv_signals_power_cutoff_to_hr" key="kv_signals_power_cutoff_to_hr" form="Form3"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col">
+                <div class="row">
+                    <div class="col margin-top10 header-title">
+                        Hand Signalman
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65 border border-bottom-none border-left-none">
+                <div class="row">
+                    <div class="col">
+                        Person in charge of job must arrange Hand signalman (currently certified)
+                        with the Manager concerned. <br/>Arranged ?
+                    </div>
+                    <div class="col col-5">
+                        <a ng-click="ctrlForm3.form.hand_signal_man=!ctrlForm3.form.hand_signal_man;"
+                           post-filled-form src-key="hand_signal_man" src-value="ctrlForm3.form.hand_signal_man" src-form="Form3" >
+                            <i ng-class="{'ion ion-ios-checkmark check-mark':ctrlForm3.form.hand_signal_man,'ion ion-ios-circle-outline uncheck-mark':!ctrlForm3.form.hand_signal_man}"></i></a>
+
+                    </div>
+                    <div class="col col-15 margin-top3">
+                        Yes
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row background-content">
+            <div class="col col-35">
+                <div class="row">
+                    <div class="col header-title">
+                        Signals Person in Charge and Contact Number
+                    </div>
+                </div>
+            </div>
+            <div class="col col-65">
+                <div class="row">
+                    <div class="col col-20 margin-top10 text-bold">
+                        Person Name
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Person Name"  ng-model="ctrlForm3.form.person_in_charge_name"
+                                post-filled-form src-key="person_in_charge_name" src-value="ctrlForm3.form.person_in_charge_name" src-form="Form3" >
+                        <div ng-hide="true" capitalize first-character-word="true" src-item="ctrlForm3.form.person_in_charge_name"></div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col col-20 margin-top10 text-bold">
+                        Contact Number
+                    </div>
+                    <div class="col margin-top3">
+                        <input   class="background-transparent" type="text"  placeholder="Contact Number"  ng-model="ctrlForm3.form.person_in_charge_contact_no"
+                                post-filled-form src-key="person_in_charge_contact_no" src-value="ctrlForm3.form.person_in_charge_contact_no" src-form="Form3" >
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

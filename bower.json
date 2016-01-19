@@ -1,0 +1,13 @@
+{
+  "name": "track-access-html5",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-bootstrap": "0.11.2",
+    "lodash": "2.4.1",
+    "ionic": "1.0.0",
+    "jquery": "2.0.3",
+    "highcharts": "4.1.5",
+    "moment": "2.10.3"
+  }
+}

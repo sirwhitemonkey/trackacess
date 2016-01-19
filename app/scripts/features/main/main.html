@@ -1,0 +1,11 @@
+<ion-view>
+    <ion-pane>
+        <ion-header-bar class="bar-stable background-custom-1">
+            <button class="btn btn-primary dashboard-home" ng-if="ctrlApp.dashboard.home" ng-click="navigateRoute('main.dashboard')"><i class="ion ion-ios-keypad"></i>  Dashboard</button>
+            <h1 class="title main-header-title">{{ctrlApp.title}}</h1>
+            <button class="button button-icon button-clear ion-android-menu more-options"  ng-click="ctrlApp.moreOptions($event)">
+            </button>
+        </ion-header-bar>
+        <ion-nav-view name="content" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+</ion-view>
